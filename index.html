@@ -2,178 +2,390 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
-     <script type="module" src="/src/main.js"></script>
-    <title>Kevin Monsen Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <title>Kevin Monsen Portfolio</title>
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
-            <ul>
-                <li><a href="#leader">Leader</a></li>
-                <li><a href="#engineer">Engineer</a></li>
-                <li><a href="#problem-solver">Problem Solver</a>
-            </ul>
-        </nav>
-        <div class="main">
-            <h1>Kevin Monsen</h1>
-            <h2>Leadership, engineering, and problem solving at scale.</h2>
-        </div>
-    </div>
-    <!-- Leadership block -->
-<section class="leadership">
-  <div class="leadership-grid">
-
-    <!-- Left: photo (optional) -->
-    <figure class="leadership-media" aria-hidden="true">
-      <img src="path/to/leadership-photo.jpg" alt="" />
-      <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
-    </figure>
-
-    <!-- Right: content -->
-    <div class="leadership-content">
-      <h2 id="leader">Leader</h2>
-      <p class="leadership-intro">
-        I lead people and operations at scale. As an Eagle Scout and Order of the Arrow leader, I’ve directed multi-unit organizations, rebuilt communications systems, and coordinated large, complex events. I combine hands-on execution with strategic planning — whether that’s redesigning a lodge website and social presence, managing 150-person camping trips, or organizing regional confrences. I deliver reliable outcomes and keep people safe and productive.
-      </p>
-
-      <ul class="accordion" role="list">
-        <!-- Example panel with metrics -->
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Lodge Chief</span>
-              <span class="role-scope">Organization-wide leadership · 50–150 participants</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <div class="metrics">
-                <span class="chip">Events led: 4</span>
-                <span class="chip">Max participants: 150</span>
-                <span class="chip">Volunteers: 20+</span>
-              </div>
-
-              <ul>
-                <li>Simultaneously served as Senior Patrol Leader and Lodge Chief; expanded lodge membership and led four multi-unit camping trips (50–150 participants) ensuring logistics, safety, and program quality.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Section Vice Chief</span>
-              <span class="role-scope">Regional Leadership · 270 participants</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <div class="metrics">
-                <span class="chip">Volunteers: 30+</span>
-                <span class="chip">AppMachine</span>
-              </div>
-              <ul>
-                <li>Cordinated a multilodge confrence with over 250 participants. Deligated tasks and oversaw committee members during planning and execution. Developed Event App Using AppMachine</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Senior Lifeguard</span>
-              <span class="role-scope">Operational safety & staff leadership</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <div class="metrics">
-                <span class="chip">Managed 30 Lifeguards</span>
-                <span class="chip">2x Employee of the Month</span>
-              </div>
-              <ul>
-                <li>Managed 20 lifeguards and pool chemical operations; trained 12 new lifeguards and led shift coordination for 100+ daily patrons — demonstrates operational safety, personnel management, and compliance under pressure.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Senior Patrol Leader</span>
-              <span class="role-scope">Local Leadership · 70 participants</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <div class="metrics">
-                <span class="chip">Volunteers: 30+</span>
-                <span class="chip">AppMachine</span>
-              </div>
-              <ul>
-                <li>Led troop leadership and streamlined weekly operations; redesigned weekly meetings into a short, high-impact follow-up session, improving volunteer efficiency and engagement. Recruited and mentored patrol leaders; established consistent meeting leadership across the troop.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Troop Instructor</span>
-              <span class="role-scope">Instruction & mentorship · 30 scouts</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <div class="metrics">
-                <span class="chip">Managed 10 Direct Reports</span>
-              </div>
-              <ul>
-                <li>Directed rank advancement program (2021) and managed 10 Troop Guides. Designed and produced learning kits that improved retention and sped advancement.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <!-- Repeat the pattern for other roles -->
-        <li class="panel-item">
-          <button class="q" aria-expanded="false">
-            <span class="role-left">
-              <span class="role-title">Lodge Secretary</span>
-              <span class="role-scope">Communications & website redesign</span>
-            </span>
-            <span class="chev" aria-hidden="true"></span>
-          </button>
-
-          <div class="panel" role="region" aria-hidden="true">
-            <div class="panel-body">
-              <ul>
-                <li>Rebuilt lodge communications: redesigned social media and delivered a V1 website overhaul (<a href="https://www.ohlone63.org">ohlone63.org</a>), improving clarity and member engagement.</li>
-                <li>Maintained regular member communications and documentation.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <!-- Add the other roles similarly... -->
-         
+  <div class="hero">
+    <nav>
+      <ul>
+        <li><a href="#leader">Leader</a></li>
+        <li><a href="#engineer">Engineer</a></li>
+        <li><a href="#problem-solver">Problem Solver</a>
       </ul>
-
-      <p class="leadership-bridge">
-        These experiences translate directly to IT and cybersecurity: event logistics mirror change management, volunteer coordination reflects stakeholder communication, and safety protocols align with incident response and compliance.
-      </p>
+    </nav>
+    <div class="main">
+      <h1>Kevin Monsen</h1>
+      <h2>Leadership, engineering, and problem solving at scale.</h2>
     </div>
   </div>
-</section>
+  <!-- Leadership block -->
+  <section class="leadership">
+    <div class="grid">
+
+      <!-- Left: photo (optional) -->
+      <figure class="leadership-media" aria-hidden="true">
+        <img src="path/to/leadership-photo.jpg" alt="" />
+        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+      </figure>
+
+      <!-- Right: content -->
+      <div class="content">
+        <h2 id="leader">Leader</h2>
+        <p class="intro">
+          I lead people and operations at scale. As an Eagle Scout and Order of the Arrow leader, I’ve directed
+          multi-unit organizations, rebuilt communications systems, and coordinated large, complex events. I combine
+          hands-on execution with strategic planning — whether that’s redesigning a lodge website and social presence,
+          managing 150-person camping trips, or organizing regional confrences. I deliver reliable outcomes and keep
+          people safe and productive.
+        </p>
+
+        <ul class="accordion" role="list">
+          <!-- Example panel with metrics -->
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Lodge Chief</span>
+                <span class="role-scope">Organization-wide leadership · 50–150 participants</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Events led: 4</span>
+                  <span class="chip">Max participants: 150</span>
+                  <span class="chip">Volunteers: 20+</span>
+                </div>
+
+                <ul>
+                  <li>Simultaneously served as Senior Patrol Leader and Lodge Chief; expanded lodge membership and led
+                    four multi-unit camping trips (50–150 participants) ensuring logistics, safety, and program quality.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Section Vice Chief</span>
+                <span class="role-scope">Regional Leadership · 270 participants</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Volunteers: 30+</span>
+                  <span class="chip">AppMachine</span>
+                </div>
+                <ul>
+                  <li>Cordinated a multilodge confrence with over 250 participants. Deligated tasks and oversaw
+                    committee members during planning and execution. Developed Event App Using AppMachine</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Senior Lifeguard</span>
+                <span class="role-scope">Operational safety & staff leadership</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Managed 30 Lifeguards</span>
+                  <span class="chip">2x Employee of the Month</span>
+                </div>
+                <ul>
+                  <li>Managed 20 lifeguards and pool chemical operations; trained 12 new lifeguards and led shift
+                    coordination for 100+ daily patrons — demonstrates operational safety, personnel management, and
+                    compliance under pressure.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Senior Patrol Leader</span>
+                <span class="role-scope">Local Leadership · 70 participants</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Volunteers: 30+</span>
+                  <span class="chip">AppMachine</span>
+                </div>
+                <ul>
+                  <li>Led troop leadership and streamlined weekly operations; redesigned weekly meetings into a short,
+                    high-impact follow-up session, improving volunteer efficiency and engagement. Recruited and mentored
+                    patrol leaders; established consistent meeting leadership across the troop.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Troop Instructor</span>
+                <span class="role-scope">Instruction & mentorship · 30 scouts</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Managed 10 Direct Reports</span>
+                </div>
+                <ul>
+                  <li>Directed rank advancement program (2021) and managed 10 Troop Guides. Designed and produced
+                    learning kits that improved retention and sped advancement.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Repeat the pattern for other roles -->
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Lodge Secretary</span>
+                <span class="role-scope">Communications & website redesign</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <ul>
+                  <li>Rebuilt lodge communications: redesigned social media and delivered a V1 website overhaul (<a
+                      href="https://www.ohlone63.org">ohlone63.org</a>), improving clarity and member engagement.</li>
+                  <li>Maintained regular member communications and documentation.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Add the other roles similarly... -->
+
+        </ul>
+
+        <p class="bridge">
+          These experiences translate directly to IT and cybersecurity: event logistics mirror change management,
+          volunteer coordination reflects stakeholder communication, and safety protocols align with incident response
+          and compliance.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="engineering">
+    <div class="grid">
+      <!-- Right: content -->
+      <div class="content">
+        <h2 id="engineer">Engineer</h2>
+        <p class="intro">
+          I engineer reliable systems with a focus on security, maintainability, and scale. My experience spans IT infrastructure, networking, web platforms, and software development — from deploying secure networks and migrating production services to building software and hardware solutions that solve real problems.
+        </p>
+
+        <ul class="accordion" role="list">
+          <!-- Example panel with metrics -->
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">IT Infrastructure & Cloud</span>
+                <span class="role-scope">Email & web migrations · Cloud platforms · High availability</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Google Workspace</span>
+                  <span class="chip">Cloudflare</span>
+                  <span class="chip">50+ users</span>
+                </div>
+                <ul>
+                  <li>Designed and executed migrations of production email and web infrastructure, focusing on uptime, cost reduction, and long-term maintainability. Implemented backup and CDN strategies to improve resilience and performance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Networking & Systems</span>
+                <span class="role-scope">Network design · Troubleshooting · Documentation</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Ubiquiti</span>
+                  <span class="chip">VLANs</span>
+                  <span class="chip">Network Maping</span>
+                </div>
+                <ul>
+                  <li>Designed and deployed a segmented network using VLANs and UniFi hardware to improve reliability and security. Created network diagrams and documentation to support troubleshooting and future expansion.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Software Engineering</span>
+                <span class="role-scope">Application development · AI-assisted solutions</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                </div>
+                <ul>
+                  <li>Developed web and software projects emphasizing clarity, usability, and maintainable structure. Built a computer vision–assisted device using embedded hardware and AI tooling to improve real-world accessibility.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Hardware & Embedded Systems</span>
+                <span class="role-scope">Hands on Technology Skills</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                </div>
+                <ul>
+                  <li>Configured and built PC. Repasted GPU to improve performance and reliability</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <p class="bridge">
+          I approach engineering with a security-first, reliability-focused mindset, designing systems that are maintainable, well-documented, and resilient under real-world conditions.
+        </p>
+      </div>
+      <figure class="engineer-media" aria-hidden="true">
+        <img src="path/to/leadership-photo.jpg" alt="" />
+        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="problem-solver">
+    <div class="grid">
+
+      <!-- Left: photo (optional) -->
+      <figure class="leadership-media" aria-hidden="true">
+        <img src="images/leadership.jpeg" alt="" />
+        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+      </figure>
+
+      <!-- Right: content -->
+      <div class="content">
+        <h2 id="problem-solver">Problem Solver</h2>
+        <p class="intro">
+          I approach problems methodically, balancing speed with accuracy and risk awareness. Whether working in technical environments or operational roles, I focus on isolating root causes, communicating clearly, and implementing solutions that prevent recurrence.
+        </p>
+
+        <ul class="accordion" role="list">
+          <!-- Example panel with metrics -->
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Structured Troubleshooting</span>
+                <span class="role-scope">Root cause analysis · Methodical diagnosis</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Events led: 4</span>
+                  <span class="chip">Max participants: 150</span>
+                  <span class="chip">Volunteers: 20+</span>
+                </div>
+
+                <ul>
+                  <li>Simultaneously served as Senior Patrol Leader and Lodge Chief; expanded lodge membership and led
+                    four multi-unit camping trips (50–150 participants) ensuring logistics, safety, and program quality.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Risk Awareness & Prevention</span>
+                <span class="role-scope">Risk-aware decisions · Operational safety</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Volunteers: 30+</span>
+                  <span class="chip">AppMachine</span>
+                </div>
+                <ul>
+                  <li>Cordinated a multilodge confrence with over 250 participants. Deligated tasks and oversaw
+                    committee members during planning and execution. Developed Event App Using AppMachine</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="panel-item">
+            <button class="q" aria-expanded="false">
+              <span class="role-left">
+                <span class="role-title">Clear Communication Under Uncertainty</span>
+                <span class="role-scope">Expectation management · Documentation</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="panel" role="region" aria-hidden="true">
+              <div class="panel-body">
+                <div class="metrics">
+                  <span class="chip">Managed 30 Lifeguards</span>
+                  <span class="chip">2x Employee of the Month</span>
+                </div>
+                <ul>
+                  <li>Managed 20 lifeguards and pool chemical operations; trained 12 new lifeguards and led shift
+                    coordination for 100+ daily patrons — demonstrates operational safety, personnel management, and
+                    compliance under pressure.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Add the other roles similarly... -->
+        </ul>
+        <p class="bridge">
+          These experiences translate directly to IT and cybersecurity: event logistics mirror change management,
+          volunteer coordination reflects stakeholder communication, and safety protocols align with incident response
+          and compliance.
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
