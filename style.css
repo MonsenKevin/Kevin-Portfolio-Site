@@ -416,7 +416,7 @@ footer a {
 }
 
 /* Mobile-specific fixes: tighten nav spacing and fix CTA paragraph padding */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   nav {
     padding-top: 1rem;
   }
