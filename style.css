@@ -204,7 +204,7 @@ body {
   padding: 16px 20px;
   background: transparent;
   border: none;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: background 180ms;
 }
@@ -278,11 +278,6 @@ body {
   border: 1px solid rgba(44, 122, 123, 0.12);
 }
 
-/* open states (toggled via JS) */
-.panel.open {
-  /* max-height overridden in JS for accurate height */
-}
-
 .q[aria-expanded="true"] .chev {
   transform: rotate(90deg);
   border-left-color: var(--accent);
@@ -312,7 +307,7 @@ body {
   /* move images above content on mobile */
   .intro,
   .bridge {
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
 
