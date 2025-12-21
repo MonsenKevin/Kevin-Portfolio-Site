@@ -90,6 +90,12 @@ body {
   padding-bottom: 20px;
 }
 
+/* Ensure image grid items are centered horizontally in their grid cell */
+.leadership-media,
+.engineer-media {
+  justify-self: center;
+}
+
 /* Media (image) */
 .leadership-media img {
   width: 100%;
