@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/style.css">
-  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
   <title>Kevin Monsen Portfolio</title>
 </head>
 
@@ -16,7 +16,7 @@
       <ul>
         <li><a href="#leader">Leader</a></li>
         <li><a href="#engineer">Engineer</a></li>
-        <li><a href="#problem-solver">Problem Solver</a>
+        <li><a href="#problem-solver">Problem Solver</a></li>
       </ul>
     </nav>
     <div class="main">
@@ -30,8 +30,9 @@
 
       <!-- Left: photo (optional) -->
       <figure class="leadership-media" aria-hidden="true">
-        <img src="path/to/leadership-photo.jpg" alt="" />
-        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+        <img src="images/leadership.jpeg" alt="" />
+        <figcaption class="sr-only">Leading a 50 person recogition event</figcaption>
+      </figure>
       </figure>
 
       <!-- Right: content -->
@@ -195,7 +196,9 @@
       <div class="content">
         <h2 id="engineer">Engineer</h2>
         <p class="intro">
-          I engineer reliable systems with a focus on security, maintainability, and scale. My experience spans IT infrastructure, networking, web platforms, and software development — from deploying secure networks and migrating production services to building software and hardware solutions that solve real problems.
+          I engineer reliable systems with a focus on security, maintainability, and scale. My experience spans IT
+          infrastructure, networking, web platforms, and software development — from deploying secure networks and
+          migrating production services to building software and hardware solutions that solve real problems.
         </p>
 
         <ul class="accordion" role="list">
@@ -216,7 +219,9 @@
                   <span class="chip">50+ users</span>
                 </div>
                 <ul>
-                  <li>Designed and executed migrations of production email and web infrastructure, focusing on uptime, cost reduction, and long-term maintainability. Implemented backup and CDN strategies to improve resilience and performance.
+                  <li>Designed and executed migrations of production email and web infrastructure, focusing on uptime,
+                    cost reduction, and long-term maintainability. Implemented backup and CDN strategies to improve
+                    resilience and performance.
                   </li>
                 </ul>
               </div>
@@ -238,7 +243,9 @@
                   <span class="chip">Network Maping</span>
                 </div>
                 <ul>
-                  <li>Designed and deployed a segmented network using VLANs and UniFi hardware to improve reliability and security. Created network diagrams and documentation to support troubleshooting and future expansion.</li>
+                  <li>Designed and deployed a segmented network using VLANs and UniFi hardware to improve reliability
+                    and security. Created network diagrams and documentation to support troubleshooting and future
+                    expansion.</li>
                 </ul>
               </div>
             </div>
@@ -256,7 +263,9 @@
                 <div class="metrics">
                 </div>
                 <ul>
-                  <li>Developed web and software projects emphasizing clarity, usability, and maintainable structure. Built a computer vision–assisted device using embedded hardware and AI tooling to improve real-world accessibility.</li>
+                  <li>Developed web and software projects emphasizing clarity, usability, and maintainable structure.
+                    Built a computer vision–assisted device using embedded hardware and AI tooling to improve real-world
+                    accessibility.</li>
                 </ul>
               </div>
             </div>
@@ -265,7 +274,6 @@
             <button class="q" aria-expanded="false">
               <span class="role-left">
                 <span class="role-title">Hardware & Embedded Systems</span>
-                <span class="role-scope">Hands on Technology Skills</span>
               </span>
               <span class="chev" aria-hidden="true"></span>
             </button>
@@ -281,12 +289,15 @@
           </li>
         </ul>
         <p class="bridge">
-          I approach engineering with a security-first, reliability-focused mindset, designing systems that are maintainable, well-documented, and resilient under real-world conditions.
+          I approach engineering with a security-first, reliability-focused mindset, designing systems that are
+          maintainable, well-documented, and resilient under real-world conditions.
         </p>
       </div>
       <figure class="engineer-media" aria-hidden="true">
-        <img src="path/to/leadership-photo.jpg" alt="" />
-        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+        <div class="image-wrapper">
+          <img src="images/Engineer.png" alt="Hardware project" />
+        </div>
+        <figcaption class="sr-only">Hardware-assisted vision project</figcaption>
       </figure>
     </div>
   </section>
@@ -295,15 +306,16 @@
 
       <!-- Left: photo (optional) -->
       <figure class="leadership-media" aria-hidden="true">
-        <img src="images/leadership.jpeg" alt="" />
-        <figcaption class="sr-only">Leading a multi-unit Order of the Arrow event</figcaption>
+        <img src="images/error.png" alt="" />
+        <figcaption class="sr-only">Recovering from a production WordPress failure using backups</figcaption>
       </figure>
 
       <!-- Right: content -->
       <div class="content">
         <h2 id="problem-solver">Problem Solver</h2>
         <p class="intro">
-          I approach problems methodically, balancing speed with accuracy and risk awareness. Whether working in technical environments or operational roles, I focus on isolating root causes, communicating clearly, and implementing solutions that prevent recurrence.
+          Clear communication and long-term thinking guide my approach to problem solving. I focus on building solutions
+          that are reliable, well-documented, and designed to prevent recurrence rather than temporary fixes.
         </p>
 
         <ul class="accordion" role="list">
@@ -319,16 +331,14 @@
 
             <div class="panel" role="region" aria-hidden="true">
               <div class="panel-body">
-                <div class="metrics">
-                  <span class="chip">Events led: 4</span>
-                  <span class="chip">Max participants: 150</span>
-                  <span class="chip">Volunteers: 20+</span>
-                </div>
-
                 <ul>
-                  <li>Simultaneously served as Senior Patrol Leader and Lodge Chief; expanded lodge membership and led
-                    four multi-unit camping trips (50–150 participants) ensuring logistics, safety, and program quality.
-                  </li>
+                  <li>Attempted performance optimization prior to a hosting migration by evaluating and testing
+                    software-level optimizations to reduce unnecessary infrastructure changes.</li>
+                  <li>Diagnosed system crashes by running benchmarks and monitoring thermal metrics, identifying GPU
+                    overheating as the root cause.</li>
+                  <li>Responded to a rapid pool temperature drop by isolating boiler error conditions and coordinating
+                    with management to restore safe operation.</li>
+
                 </ul>
               </div>
             </div>
@@ -343,13 +353,9 @@
             </button>
             <div class="panel" role="region" aria-hidden="true">
               <div class="panel-body">
-                <div class="metrics">
-                  <span class="chip">Volunteers: 30+</span>
-                  <span class="chip">AppMachine</span>
-                </div>
                 <ul>
-                  <li>Cordinated a multilodge confrence with over 250 participants. Deligated tasks and oversaw
-                    committee members during planning and execution. Developed Event App Using AppMachine</li>
+                  <li>Implemented frequent backups during website redevelopment, creating recovery points after major
+                    edits or plugin changes to minimize downtime and prevent catastrophic data loss.</li>
                 </ul>
               </div>
             </div>
@@ -357,21 +363,18 @@
           <li class="panel-item">
             <button class="q" aria-expanded="false">
               <span class="role-left">
-                <span class="role-title">Clear Communication Under Uncertainty</span>
+                <span class="role-title">Communication and Future Planning</span>
                 <span class="role-scope">Expectation management · Documentation</span>
               </span>
               <span class="chev" aria-hidden="true"></span>
             </button>
             <div class="panel" role="region" aria-hidden="true">
               <div class="panel-body">
-                <div class="metrics">
-                  <span class="chip">Managed 30 Lifeguards</span>
-                  <span class="chip">2x Employee of the Month</span>
-                </div>
                 <ul>
-                  <li>Managed 20 lifeguards and pool chemical operations; trained 12 new lifeguards and led shift
-                    coordination for 100+ daily patrons — demonstrates operational safety, personnel management, and
-                    compliance under pressure.</li>
+                  <li>Chose WordPress over a fully custom codebase to ensure long-term maintainability for future
+                    leaders with varying technical experience.</li>
+                  <li>Produced clear documentation for plugins and workflows and trained an adult leader to ensure
+                    continuity, knowledge transfer, and consistent site management.</li>
                 </ul>
               </div>
             </div>
@@ -379,13 +382,29 @@
           <!-- Add the other roles similarly... -->
         </ul>
         <p class="bridge">
-          These experiences translate directly to IT and cybersecurity: event logistics mirror change management,
-          volunteer coordination reflects stakeholder communication, and safety protocols align with incident response
-          and compliance.
+          “Reliable systems are built by people who plan for failure.”<br><br>
+          Communcation and forthought highlight my endevors. When designing any system ensuring that the system is not
+          just a temporary fix but a lasting proscess that can be relied on is the front of my thought.
         </p>
       </div>
     </div>
   </section>
+  <div class="cta">
+    <h2>Interested in working together?</h2>
+    <p>I’m currently seeking IT or security-focused internship opportunities where I can contribute, learn, and take on
+      real responsibility. If my background aligns with your team, I’d welcome the opportunity to connect.</p>
+    <div class="cta-buttons">
+      <a href="mailto:kevin.w.monsen@gmail.com">Email Me</a>
+      <a href="/resume.html">View Resume</a>
+      <a href="https://www.linkedin.com/in/kevin-monsen">Connect on LinkedIn</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Kevin Monsen</p>
+      <p>Contact us: <a href="mailto:kevin.w.monsen@gmail.com">kevin.w.monsen@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 
 </html>
