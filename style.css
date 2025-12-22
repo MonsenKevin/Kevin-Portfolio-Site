@@ -111,9 +111,10 @@ body {
   text-align: center;
 }
 
-.engineering{
+.engineering {
   background: #F1F5F9;
 }
+
 .engineer-media img {
   width: 75%;
   max-width: 420px;
@@ -189,6 +190,13 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* Projects section: narrower centered accordions */
+section.Projects .accordion {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Each row */
@@ -267,6 +275,14 @@ body {
   line-height: 1.6;
 }
 
+.showcase {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 /* metrics chips */
 .metrics {
   display: flex;
@@ -303,6 +319,13 @@ body {
 @media (max-width: 880px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Make Projects accordions full-width on small screens for readability */
+  section.Projects .accordion {
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
   }
 
   .leadership-media,
@@ -395,24 +418,28 @@ footer a {
   text-decoration: none;
   /* Remove underlines from links */
 }
-.resume-button{
+
+.resume-button {
   display: flex;
   width: 100%;
   justify-content: center;
   padding: 20px;
 
 }
-.resume-button a{
+
+.resume-button a {
   padding: 10px;
   text-decoration: none;
   color: var(--text);
   border: 2px solid #2C7A7B;
   border-radius: 30px;
 }
-.resume-button a:hover{
+
+.resume-button a:hover {
   background: #2C7A7B;
 }
-.resume-title{
+
+.resume-title {
   display: flex;
   width: 100%;
   height: auto;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Monsen Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+
+<body>
+    <div class="showcase">
+        <section class="problem-solver">
+            <div class="grid">
+
+                <!-- Left: photo (optional) -->
+                <figure class="leadership-media" aria-hidden="true">
+                    <img src="./images/Engineer.png" alt="" />
+                    <figcaption class="sr-only">Picture of Device</figcaption>
+                </figure>
+
+                <!-- Right: content -->
+                <div class="content">
+                    <h2 id="fse">FSE 100: AI Vision Project</h2>
+                    <div class="metrics">
+                        <span class="chip">Python</span>
+                        <span class="chip">Raspberry Pi</span>
+                        <span class="chip">Sensors</span>
+                        <span class="chip">Gemini</span>
+                    </div>
+                    <p class="intro">
+                        In my Introduction to Engineering class we were challenged to design and build a device to help the visually impared be warned about objects that are above the waist. The reason this is important is because canes can only detect what is on the ground not above so a big safety concern is hitting their head. <br><br>
+                        Our design consisted of a camera and an ultrasonic sensor for detection and a vibration motor and buzzer for warnings. The web cam took a picture and sent the image to an OpenAI API asking if there were any objects in the vicinity. If the AI returned true the vibration motor would activate. The ultrasonic sensor was also working and if an object came within 1 foot the buzzer would go off, alerting the person to the danger.
+                    </p>
+                    <div class = "cta-buttons">
+                        <a href="https://github.com/MonsenKevin/AI-Vision-Assistance">View the GitHub</a>
+                </div>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>
