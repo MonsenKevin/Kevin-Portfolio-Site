@@ -53,6 +53,10 @@ nav ul li a {
   letter-spacing: 0.03em;
 }
 
+nav ul li a:hover{
+  border-bottom: 2px solid var(--accent);
+}
+
 .main {
   text-align: center;
 }
