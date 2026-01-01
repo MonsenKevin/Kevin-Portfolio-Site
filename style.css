@@ -466,7 +466,7 @@ html {
 
 .cta {
   width: 100%;
-  background: #F1F5F9;
+  /* background: #F1F5F9; */
   height: auto;
   display: flex;
   justify-content: center;
