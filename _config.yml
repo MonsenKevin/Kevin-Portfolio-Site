@@ -1,0 +1,10 @@
+# GitHub Pages Jekyll configuration
+plugins:
+  - jekyll-sitemap
+
+# Disable automatic Jekyll processing (since you're using plain HTML)
+include:
+  - .htaccess
+
+# Fix trailing slashes redirect issue
+enforce_ssl: true
