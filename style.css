@@ -180,10 +180,22 @@ body {
 /* Content */
 .content h2 {
   text-align: center;
+  align-items: center;
+  justify-content: center;
   font-size: clamp(28px, 4.5vw, 48px);
   margin: 0 0 0.5rem;
   font-weight: 700;
 }
+
+.content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 
 .intro {
   max-width: 65ch;
