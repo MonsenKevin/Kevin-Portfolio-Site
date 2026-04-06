@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracer FIRE — Kevin Monsen Portfolio</title>
+    <link rel="canonical" href="https://kevinmonsen.com/tracer.html">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+
+<body>
+    <div class="showcase">
+        <section class="problem-solver">
+            <div class="grid">
+
+                <figure class="leadership-media" aria-hidden="true">
+                    <img src="./images/dash.png" alt="" />
+                    <figcaption class="sr-only">SIEM dashboard during incident response exercise</figcaption>
+                </figure>
+
+                <div class="content">
+                    <h2 id="tracer-fire">Tracer FIRE Incident Response</h2>
+                    <p style="font-size:0.9rem; color:#64748B; margin-bottom:1rem;">Sandia National Laboratories &nbsp;·&nbsp; March 2026</p>
+                    <div class="metrics">
+                        <span class="chip">Elastic SIEM</span>
+                        <span class="chip">Azure Data Explorer</span>
+                        <span class="chip">Wireshark</span>
+                        <span class="chip">Incident Response</span>
+                    </div>
+                    <p class="intro">
+                        Participated in Tracer FIRE, a hands-on cybersecurity incident response training program run by Sandia National Laboratories. The exercise simulated a real-world post-breach environment, placing participants in a SOC analyst role tasked with reconstructing attacker activity from raw log data. <br><br>
+                        The primary investigation tool was Azure Data Explorer (ADX), used to write KQL queries against large datasets of event logs, network telemetry, and endpoint activity. Elastic SIEM served as the correlation platform, surfacing alerts and supporting timeline reconstruction across distributed log sources. Wireshark was used to inspect packet captures and validate network-level findings. <br><br>
+                        The exercise was structured as a CTF — each finding unlocked further investigation paths. Work included identifying indicators of compromise, tracing lateral movement, detecting persistence mechanisms, and producing structured incident documentation matching the format used in professional SOC environments. <br><br>
+                        The training reinforced a disciplined, query-first approach to threat hunting: forming a hypothesis, writing targeted queries, and following the evidence rather than clicking through dashboards.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
