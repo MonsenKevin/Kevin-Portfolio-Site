@@ -464,6 +464,49 @@ html {
   padding-bottom: 10px;
 }
 
+.education {
+  background: #F8FAFC;
+  padding: 4rem 0 3rem;
+}
+
+.education .content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.education h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.education .edu-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.edu-block {
+  margin-bottom: 1.5rem;
+}
+
+.edu-block-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748B;
+  margin-bottom: 0.5rem;
+}
+
+.edu-block .metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .cta {
   width: 100%;
   /* background: #F1F5F9; */
