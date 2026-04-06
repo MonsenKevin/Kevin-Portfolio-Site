@@ -482,12 +482,16 @@ html {
 }
 
 .education .content {
+  justify-content: center;
+  align-items: center;
   max-width: 780px;
   margin: 0 auto;
   padding: 0 var(--gutter);
 }
 
 .education h2 {
+  justify-content: center;
+  align-items: center;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 700;
   color: var(--text);
@@ -495,16 +499,19 @@ html {
 }
 
 .education .edu-meta {
+  justify-content: center;
   font-size: 0.95rem;
   color: var(--muted);
   margin-bottom: 1.5rem;
 }
 
 .edu-block {
+  justify-content: center;
   margin-bottom: 1.5rem;
 }
 
 .edu-block-label {
+  justify-content: center;
   font-size: 0.82rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -514,6 +521,7 @@ html {
 }
 
 .edu-block .metrics {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
