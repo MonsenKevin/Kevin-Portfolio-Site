@@ -66,4 +66,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+  <url>
+    <loc>https://kevinmonsen.com/email.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
 </urlset>
