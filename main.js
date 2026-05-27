@@ -1,6 +1,7 @@
 // Nav: transparent at top, morphs to pill/glass on scroll
 const nav = document.querySelector('nav');
 function updateNav() {
+  if (!nav) return;
   nav.classList.toggle('nav--scrolled', window.scrollY > 60);
 }
 window.addEventListener('scroll', updateNav, { passive: true });
@@ -62,6 +63,10 @@ window.addEventListener('scroll', () => {
     const activeLink = document.querySelector('nav ul li a.nav-active');
     if (activeLink) moveIndicatorTo(activeLink.getAttribute('href').slice(1));
   });
+}, { passive: true });
+// Reposition indicator when the window is resized (link rects change)
+window.addEventListener('resize', () => {
+  requestAnimationFrame(updateActiveLink);
 }, { passive: true });
 updateActiveLink();
 
