@@ -19,7 +19,7 @@ function clearActiveLinks() {
 }
 
 function updateActiveLink() {
-  const trigger = window.scrollY + window.innerHeight * 0.4;
+  const trigger = window.scrollY + window.innerHeight * 0.55;
 
   if (projectsEl && trigger >= projectsEl.offsetTop) {
     clearActiveLinks();
