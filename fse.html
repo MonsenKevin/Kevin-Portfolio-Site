@@ -11,17 +11,25 @@
 </head>
 
 <body>
-    <a href="./" class="back-btn">← Return Home</a>
     <div class="showcase">
         <section class="problem-solver">
             <div class="grid">
 
                 <!-- Left: photo (optional) -->
-                <figure class="leadership-media" aria-hidden="true">
-                    <img src="./images/Engineer.png" alt="" />
-                    <figcaption class="sr-only">Picture of Device</figcaption>
-                </figure>
-
+                <div class="column">
+                    <a href="./" class="back-btn">← Return Home</a>
+                    <figure class="leadership-media" aria-hidden="true">
+                        <div class="media-container">
+                            <img src="./images/Engineer.png" alt="" />
+                            <button class="play-btn" id="playBtn" aria-label="Play video">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <figcaption class="sr-only">Picture of Device</figcaption>
+                    </figure>
+                </div>
                 <!-- Right: content -->
                 <div class="content">
                     <h2 id="fse">FSE 100: AI Vision Project</h2>
@@ -45,7 +53,7 @@
                         alert. This multi-sensor approach improved reliability by combining AI-based recognition with
                         direct distance measurement. <br> <br>
                         The final prototype demonstrated how layered sensing and feedback mechanisms can enhance user
-                        awareness and reduce the risk of head-level collisions.  <br> <br>
+                        awareness and reduce the risk of head-level collisions. <br> <br>
                     </p>
                     <div class="cta-buttons">
                         <a href="https://github.com/MonsenKevin/AI-Vision-Assistance">View the GitHub</a>
@@ -53,6 +61,47 @@
                 </div>
         </section>
     </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeBtn" aria-label="Close video">&times;</button>
+            <div class="video-container">
+                <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        const playBtn = document.getElementById('playBtn');
+        const videoModal = document.getElementById('videoModal');
+        const closeBtn = document.getElementById('closeBtn');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        // Video URL placeholder - update with actual YouTube link
+        const youtubeVideoId = '1F6Pv7JKLw8'; // Placeholder, change to actual video ID
+        
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            videoFrame.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`;
+            videoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            videoModal.classList.remove('active');
+            videoFrame.src = '';
+            document.body.style.overflow = '';
+        });
+        
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.classList.remove('active');
+                videoFrame.src = '';
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 
 </html>
