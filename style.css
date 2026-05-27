@@ -466,6 +466,9 @@ section.Projects .accordion {
   align-items: center;
   justify-content: center;
 }
+.showcase > section {
+  border-top: none;
+}
 /* Extra Stats (closing section) */
 .extra-stats {
   padding: 48px 20px;
