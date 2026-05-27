@@ -20,23 +20,32 @@
   width: 100%;
   height: 100vh;
   background-color: #F8FAFC;
+  background-image: radial-gradient(circle, rgba(44, 122, 123, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 80px;
 }
 
 nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  padding-top: 2.5rem;
+  z-index: 100;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   display: flex;
+  background: rgba(248, 250, 252, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--divider);
 }
 
 nav ul {
@@ -73,6 +82,41 @@ nav ul li a:hover{
   font-size: clamp(10px, 8vw, 30px);
 }
 
+.hero-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-inner .main {
+  text-align: left;
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(44, 122, 123, 0.10);
+  border: 2px dashed rgba(44, 122, 123, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 0.82rem;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 16px;
+  line-height: 1.4;
+}
+
+.tagline-rule {
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 12px;
+}
+
 /* Base */
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -83,6 +127,7 @@ body {
 
 .leadership {
   padding: 48px 20px;
+  border-top: 3px solid #2C7A7B;
 }
 
 /* Grid: image left, content right */
@@ -107,10 +152,10 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
+  border-radius: 8px;
   object-fit: cover;
   filter: saturate(0.95) contrast(0.98);
-  box-shadow: 0 6px 20px rgba(12, 20, 30, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .leadership-media {
@@ -120,21 +165,23 @@ body {
 .engineering {
   background: #F1F5F9;
   padding: 48px 20px;
+  border-top: 3px solid #1a6b8a;
 }
 
 .engineer-media img {
   width: 75%;
   max-width: 420px;
-  /* hard cap so image never dominates */
   height: auto;
-  border-radius: 12px;
+  border-radius: 8px;
   object-fit: cover;
   filter: saturate(0.95) contrast(0.98);
-  box-shadow: 0 6px 20px rgba(12, 20, 30, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: block;
 }
-.problem-solver{
+.problem-solver {
   padding: 48px 20px;
+  border-top: 3px solid #3d7a5c;
+  background: #F4F8F7;
 }
 .engineer-media {
   display: flex;
@@ -157,7 +204,7 @@ body {
 .image-wrapper img {
   width: 100%;
   display: block;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .image-caption {
@@ -172,7 +219,7 @@ body {
   text-align: center;
   padding: 0 12px;
   background: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45));
-  border-radius: 12px;
+  border-radius: 8px;
   pointer-events: none;
   /* caption won't block clicks */
 }
@@ -184,7 +231,16 @@ body {
   justify-content: center;
   font-size: clamp(28px, 4.5vw, 48px);
   margin: 0 0 0.5rem;
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.content h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  margin: 8px auto 0;
 }
 
 .content{
@@ -258,7 +314,7 @@ section.Projects .accordion {
 }
 
 .role-title {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text);
   font-size: 1.05rem;
 }
@@ -406,11 +462,11 @@ section.Projects .accordion {
 
 .chip {
   font-size: 0.82rem;
-  color: var(--accent);
-  background: var(--chip-bg);
-  padding: 6px 8px;
+  color: #fff;
+  background: var(--accent);
+  padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(44, 122, 123, 0.12);
+  border: 1px solid var(--accent);
 }
 
 .q[aria-expanded="true"] .chev {
@@ -455,6 +511,26 @@ section.Projects .accordion {
 
   .image-wrapper {
     max-width: 100%;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-inner .main {
+    text-align: center;
+  }
+
+  .tagline-rule {
+    margin: 12px auto 0;
+  }
+
+  .hero-avatar {
+    width: 120px;
+    height: 120px;
+    font-size: 0.75rem;
   }
 }
 .sr-only{
@@ -558,35 +634,34 @@ html {
 }
 
 .cta-buttons a {
-  padding: 10px 18px;
+  padding: 12px 24px;
   text-decoration: none;
-  color: var(--text);
-  border: 2px solid #2C7A7B;
+  color: #fff;
+  background: var(--accent);
+  border: 2px solid var(--accent);
   border-radius: 30px;
   display: inline-block;
+  font-weight: 600;
+  transition: background 180ms, border-color 180ms;
 }
 
 .cta-buttons a:hover {
-  background: #2C7A7B;
+  background: #235f5f;
+  border-color: #235f5f;
   color: #fff;
 }
 
 footer {
   text-align: center;
-  /* Center the text inside the footer */
-  padding: 20px;
-  background-color: slategray;
-  /* Dark background color */
+  padding: 24px 20px;
+  background: linear-gradient(135deg, #1a3a3a 0%, #1f4545 100%);
   color: white;
-  /* White text color */
   width: 100%;
 }
 
 footer a {
-  color: #1a494a;
-  /* Link color */
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  /* Remove underlines from links */
 }
 
 .resume-button {
@@ -621,7 +696,8 @@ footer a {
 /* Mobile-specific fixes: tighten nav spacing and fix CTA paragraph padding */
 @media (max-width: 900px) {
   nav {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   nav ul {
