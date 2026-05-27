@@ -1,3 +1,11 @@
+// Nav: transparent at top, morphs to pill/glass on scroll
+const nav = document.querySelector('nav');
+function updateNav() {
+  nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+updateNav();
+
 // Accessible accordion: toggles panels, closes others, sets aria attributes
 document.querySelectorAll('.panel-item').forEach(item => {
   const btn = item.querySelector('.q');
