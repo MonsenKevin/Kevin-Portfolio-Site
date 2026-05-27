@@ -727,8 +727,38 @@ section.Projects .accordion {
 
 /* Responsive: mobile stacks */
 @media (max-width: 880px) {
+  .showcase {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .problem-solver {
+    padding-top: 92px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .grid .content {
+    order: 1;
+  }
+
+  .grid .column {
+    order: 2;
+  }
+
+  .back-btn {
+    position: fixed;
+    top: max(16px, env(safe-area-inset-top));
+    left: max(16px, env(safe-area-inset-left));
+    z-index: 120;
+    background: rgba(248, 250, 252, 0.94);
+    padding: 10px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    margin: 0;
   }
 
   /* Make Projects accordions full-width on small screens for readability */
@@ -740,10 +770,9 @@ section.Projects .accordion {
 
   .leadership-media,
   .engineer-media {
-    order: -1;
+    order: 0;
   }
 
-  /* move images above content on mobile */
   .intro,
   .bridge {
     text-align: center;
@@ -754,6 +783,7 @@ section.Projects .accordion {
     max-width: 100%;
   }
 }
+
 .sr-only{
   padding-top: 20px;
 }
