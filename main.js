@@ -6,6 +6,45 @@ function updateNav() {
 window.addEventListener('scroll', updateNav, { passive: true });
 updateNav();
 
+// Active nav link: highlights the section currently in view;
+// clears when Projects section is reached
+const navSectionIds = ['leader', 'engineer', 'problem-solver'];
+const projectsEl = document.querySelector('.Projects');
+
+function clearActiveLinks() {
+  navSectionIds.forEach(id => {
+    const a = document.querySelector(`a[href="#${id}"]`);
+    if (a) a.classList.remove('nav-active');
+  });
+}
+
+function updateActiveLink() {
+  const trigger = window.scrollY + window.innerHeight * 0.4;
+
+  if (projectsEl && trigger >= projectsEl.offsetTop) {
+    clearActiveLinks();
+    return;
+  }
+
+  let active = null;
+  for (let i = navSectionIds.length - 1; i >= 0; i--) {
+    const el = document.getElementById(navSectionIds[i]);
+    if (el && el.offsetTop <= trigger) {
+      active = navSectionIds[i];
+      break;
+    }
+  }
+
+  clearActiveLinks();
+  if (active) {
+    const a = document.querySelector(`a[href="#${active}"]`);
+    if (a) a.classList.add('nav-active');
+  }
+}
+
+window.addEventListener('scroll', updateActiveLink, { passive: true });
+updateActiveLink();
+
 // Accessible accordion: toggles panels, closes others, sets aria attributes
 document.querySelectorAll('.panel-item').forEach(item => {
   const btn = item.querySelector('.q');
