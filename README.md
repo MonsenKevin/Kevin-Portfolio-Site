@@ -25,9 +25,9 @@ The site is organized around three things I care about: leadership, engineering,
 
 ## How it's built
 
-- Plain **HTML, CSS, and JavaScript** — I didn't want to add complexity where it wasn't needed
+- Plain **HTML, CSS, and JavaScript**. I didn't want to add complexity where it wasn't needed
 - Hosted on **GitHub Pages** with a custom domain via **NameCheap**
-- Uses **Jekyll** only for the sitemap plugin — every page is static HTML
+- Uses **Jekyll** only for the sitemap plugin. Every page is static HTML
 
 ## Structure
 
