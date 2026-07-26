@@ -1,4 +1,19 @@
-# GitHub Pages Jekyll configuration
+# Site metadata
+title: "Kevin Monsen"
+description: "Portfolio site for Kevin Monsen - Cybersecurity-focused Computer Science student"
+author: "Kevin Monsen"
+email: "kevin.w.monsen@gmail.com"
+
+# GitHub Pages configuration
+url: "https://kevinmonsen.com"
+baseurl: ""
+repository: "kevmo314/Kevin-Portfolio-Site"
+
+# GitHub Pages settings
+github_username: kevmo314
+remote_theme: null
+
+# Jekyll plugins
 plugins:
   - jekyll-sitemap
 
@@ -8,3 +23,10 @@ include:
 
 # Fix trailing slashes redirect issue
 enforce_ssl: true
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+syntax_highlighter: rouge
