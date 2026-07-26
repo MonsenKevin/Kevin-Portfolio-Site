@@ -1,0 +1,95 @@
+name: Build profile
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "profile.json"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install docx
+
+      - name: Install LibreOffice
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice
+
+      - name: Build
+        run: node build.js
+
+      # Delete project pages that existed in the last build's manifest but are
+      # no longer generated (handles renames, removals, id changes).
+      - name: Remove stale pages
+        run: |
+          MANIFEST="dist/generated-pages.json"
+          PREV_MANIFEST="generated-pages.json"   # committed copy from last build
+
+          if [ -f "$PREV_MANIFEST" ]; then
+            echo "Checking for stale pages…"
+            OLD=$(jq -r '.pages[]' "$PREV_MANIFEST")
+            NEW=$(jq -r '.pages[]' "$MANIFEST")
+            for page in $OLD; do
+              if ! echo "$NEW" | grep -qx "$page"; then
+                if [ -f "$page" ]; then
+                  git rm "$page"
+                  echo "  Removed stale page: $page"
+                fi
+              fi
+            done
+          else
+            echo "No previous manifest — skipping stale check (first run)."
+          fi
+
+      # Copy generated files into their correct repo locations
+      - name: Stage outputs
+        run: |
+          mkdir -p resume
+
+          cp dist/Kevin_Monsen_Resume.docx  resume/Kevin_Monsen_Resume.docx
+          cp dist/Kevin_Monsen_Resume.pdf   resume/Kevin_Monsen_Resume.pdf
+          cp dist/accordion.html            accordion.html
+          cp dist/generated-pages.json      generated-pages.json
+
+          # Injected index.html (accordion already spliced in)
+          cp dist/index.html                index.html
+
+          # Project pages go to repo root alongside index.html
+          for f in dist/pages/*.html; do
+            cp "$f" "$(basename "$f")"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            resume/Kevin_Monsen_Resume.docx \
+            resume/Kevin_Monsen_Resume.pdf \
+            accordion.html \
+            generated-pages.json \
+            index.html \
+            $(jq -r '.pages[]' generated-pages.json | tr '\n' ' ')
+
+          if git diff --staged --quiet; then
+            echo "Nothing changed — skipping commit."
+          else
+            git commit -m "chore: rebuild from profile.json [skip ci]"
+            git push
+          fi
