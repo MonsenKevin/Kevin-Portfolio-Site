@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "description": "Master profile source of truth for Kevin Monsen. Edit here; all platforms derive from this file.",
+    "resume_top_n": 5,
+    "notes": [
+      "resume_top_n: controls how many projects appear on the resume. Default 5. Reduce as work experience grows.",
+      "Bold tool names in resume bullets use <strong> tags — resume templates and the website renderer both read these.",
+      "Each project has a 'resume_rank' field (1-N = appears on resume in that order, null = website only).",
+      "Website-only projects still have all resume fields stubbed out so you can promote them later.",
+      "TODO fields are marked with the string 'TODO' — search for TODO to find what needs filling."
+    ]
+  },
+
+  "personal": {
+    "name": "Kevin Monsen",
+    "email": "kevin.w.monsen@gmail.com",
+    "phone": "(650) 678-2570",
+    "linkedin": "linkedin.com/in/kevin-monsen",
+    "website": "kevinmonsen.com",
+    "location_school": "Tempe, AZ",
+    "location_home": "Los Altos, CA"
+  },
+
+  "summary": "Cybersecurity-focused Computer Science student with experience in incident response forensics, IT controls documentation, and change management seeking an IT and networking related internship.",
+
+  "education": [
+    {
+      "degree": "B.S., Computer Science",
+      "concentration": "Cybersecurity",
+      "institution": "Arizona State University",
+      "location": "Tempe, AZ",
+      "gpa": "4.15",
+      "expected_graduation": "May 2029",
+      "relevant_coursework": [
+        "Object-Oriented Programming",
+        "Discrete Mathematics",
+        "C/C++ Programming",
+        "Digital Logic & Design",
+        "Assembly Language Programming",
+        "Data Structures & Algorithms",
+        "Calculus III",
+        "Computer Systems Engineering (TA)"
+      ]
+    }
+  ],
+
+  "technical_skills": [
+    { "name": "Elastic (SIEM)",       "category": "Cybersecurity & SIEM" },
+    { "name": "Velociraptor",          "category": "Cybersecurity & SIEM" },
+    { "name": "Azure Data Explorer",   "category": "Cybersecurity & SIEM" },
+    { "name": "Cloudflare",            "category": "Cybersecurity & SIEM" },
+    { "name": "VLANs",                 "category": "Cybersecurity & SIEM" },
+    { "name": "C",                     "category": "Programming & Scripting" },
+    { "name": "C++",                   "category": "Programming & Scripting" },
+    { "name": "Java",                  "category": "Programming & Scripting" },
+    { "name": "Go",                    "category": "Programming & Scripting" },
+    { "name": "Bash",                  "category": "Programming & Scripting" },
+    { "name": "JavaScript",            "category": "Programming & Scripting" },
+    { "name": "PowerShell",            "category": "Programming & Scripting" },
+    { "name": "Python",                "category": "Programming & Scripting" },
+    { "name": "TypeScript",            "category": "Programming & Scripting" },
+    { "name": "Google Workspace",      "category": "IT Systems & Platforms" },
+    { "name": "Unifi / Ubiquiti",      "category": "IT Systems & Platforms" },
+    { "name": "Blynk IoT",            "category": "IT Systems & Platforms" },
+    { "name": "Windows",               "category": "IT Systems & Platforms" },
+    { "name": "macOS",                 "category": "IT Systems & Platforms" },
+    { "name": "Linux",                 "category": "IT Systems & Platforms" },
+    { "name": "Jira",                  "category": "IT Systems & Platforms" },
+    { "name": "Raspberry Pi",          "category": "IT Systems & Platforms" },
+    { "name": "ESP32",                 "category": "IT Systems & Platforms" },
+    { "name": "Tailscale",             "category": "IT Systems & Platforms" },
+    { "name": "Parsec",                "category": "IT Systems & Platforms" }
+  ],
+
+  "awards": [
+    {
+      "title": "Eagle Scout",
+      "organization": "Boy Scouts of America",
+      "year": null,
+      "notes": "Highest rank in Scouts BSA"
+    },
+    {
+      "title": "Order of the Arrow — Vigil Honor",
+      "organization": "Order of the Arrow, BSA",
+      "year": null,
+      "notes": "Highest honor within the Order of the Arrow"
+    },
+    {
+      "title": "Founder's Award",
+      "organization": "Order of the Arrow, BSA",
+      "year": null,
+      "notes": "Awarded for distinguished service to the lodge"
+    }
+  ],
+
+  "work_experience": [
+    {
+      "employer": "Fairbrae Swim and Racquet Club",
+      "location": "Sunnyvale, CA",
+      "title": "Senior Lifeguard",
+      "hours_per_week": 30,
+      "start_date": "May 2024",
+      "end_date": "August 2026",
+      "bullets": [
+        "Supervised and trained <strong>28 lifeguards</strong>, enforcing regulatory safety protocols, compliance standards, and emergency response procedures.",
+        "Maintained chemical balance and filtration systems for a <strong>300+ patron</strong> facility requiring daily compliance logging, operational checks, and communication with stakeholders."
+      ]
+    }
+  ],
+
+  "projects": [
+
+    {
+      "id": "tracer-fire",
+      "title": "Tracer FIRE Cybersecurity Incident Response Training",
+      "sponsor": "Sandia National Laboratories",
+      "category": "Cybersecurity",
+      "date": "March 2026",
+      "resume_rank": 1,
+
+      "resume": {
+        "bullets": [
+          "Conducted post-breach forensic analysis in a simulated SOC environment using <strong>Elastic SIEM</strong>, <strong>Velociraptor</strong>, <strong>Malcom</strong>, and <strong>Microsoft Azure Data Explorer</strong> to identify indicators of compromise, trace attacker activity, and document evidence for structured findings.",
+          "Completed a CTF-style incident response exercise combining log analysis, anomaly detection, control gap identification, and structured incident documentation following audit-quality methodology."
+        ]
+      },
+
+      "website": {
+        "problem": "Simulated post-breach environment requiring forensic investigation of attacker activity across a compromised SOC network.",
+        "approach": "Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.",
+        "outcome": "Completed CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control gap recommendations.",
+        "relevance": "SIEM operations, threat hunting, log analysis, KQL, incident documentation, forensics",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/tracer.html"
+      }
+    },
+
+    {
+      "id": "iot-remote-pc",
+      "title": "Remote PC Power Management using IoT Platform",
+      "sponsor": "Personal Project",
+      "category": "Hardware & Embedded Systems",
+      "date": "May 2026",
+      "resume_rank": 2,
+
+      "resume": {
+        "bullets": [
+          "Engineered an <strong>ESP32</strong> with <strong>C++</strong> and <strong>Blynk IoT</strong> cloud platform to enable remote start, restart, and shutdown of a PC from anywhere in the world.",
+          "Integrated <strong>Tailscale</strong> and <strong>Parsec</strong> for high-speed remote access despite network restrictions."
+        ]
+      },
+
+      "website": {
+        "problem": "Needed a reliable way to remotely power-cycle a home PC from out of state without expensive KVM-over-IP hardware.",
+        "approach": "Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.",
+        "outcome": "Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.",
+        "relevance": "Embedded systems, C++, IoT platforms, remote access, network security",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "TODO"
+      }
+    },
+
+    {
+      "id": "workspace-migration",
+      "title": "Cloud Email and Workspace Migration",
+      "sponsor": "Volunteer Project",
+      "category": "IT Infrastructure & Cloud",
+      "date": "February 2025",
+      "resume_rank": 3,
+
+      "resume": {
+        "bullets": [
+          "Managed a zero-downtime change management migration of <strong>50+ users</strong> from a legacy email platform to <strong>Google Workspace</strong>.",
+          "Developed process documentation, administered end-user support, and validated access provisioning, eliminating <strong>$200</strong> in annual email fees."
+        ]
+      },
+
+      "website": {
+        "problem": "Scout organization running a legacy email platform that was unreliable, costly, and not manageable by non-technical volunteers.",
+        "approach": "Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.",
+        "outcome": "50+ users migrated successfully with no service interruption. Eliminated $200/year in fees and left the organization with a maintainable, documented system.",
+        "relevance": "Change management, Google Workspace, DNS, IT documentation, stakeholder communication",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "TODO"
+      }
+    },
+
+    {
+      "id": "home-network",
+      "title": "Home Network Infrastructure Upgrade",
+      "sponsor": "Personal Project",
+      "category": "Networking",
+      "date": "April 2025",
+      "resume_rank": 4,
+
+      "resume": {
+        "bullets": [
+          "Diagnosed connectivity failures and architected a <strong>Ubiquiti</strong>-based network, configuring secure <strong>VLAN</strong>-segmented guest and internal networks to support <strong>60 client devices</strong>.",
+          "Produced detailed network diagrams, access control documentation, and configuration baselines, reducing network outages from <strong>50 to 1</strong> per year."
+        ]
+      },
+
+      "website": {
+        "problem": "Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.",
+        "approach": "Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.",
+        "outcome": "Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.",
+        "relevance": "Network engineering, Ubiquiti/UniFi, VLANs, documentation, troubleshooting",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/network.html"
+      }
+    },
+
+    {
+      "id": "ai-vision",
+      "title": "AI-Powered Vision Assistance Prototype",
+      "sponsor": "Class Project",
+      "category": "Hardware & Embedded Systems",
+      "date": "August–November 2025",
+      "resume_rank": 5,
+
+      "resume": {
+        "bullets": [
+          "Prototyped a real-time safety device using <strong>Raspberry Pi</strong>, sensors, camera, and audio alerts for visually impaired users with <strong>25 millisecond</strong> response time and <strong>99% accuracy</strong>.",
+          "Leveraged AI-assisted development (<strong>Gemini</strong>, <strong>GitHub Copilot</strong>) to accelerate prototyping and identify and resolve <strong>7 critical bugs</strong> while maintaining clean, readable code."
+        ]
+      },
+
+      "website": {
+        "problem": "Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.",
+        "approach": "Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.",
+        "outcome": "Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.",
+        "relevance": "Embedded systems, Python, Gemini API, AI-assisted development, hardware integration, testing",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/fse.html"
+      }
+    },
+
+    {
+      "id": "gpu-thermal",
+      "title": "GPU Thermal Optimization",
+      "sponsor": "Personal Project",
+      "category": "Hardware & Embedded Systems",
+      "date": null,
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Diagnosed GPU overheating via benchmarks and thermal monitoring, disassembled unit, and reapplied thermal interface materials to restore stable operating temperatures.",
+          "Validated performance recovery post-maintenance, establishing a preventive maintenance baseline for the system."
+        ]
+      },
+
+      "website": {
+        "problem": "High-end GPU running at unsafe temperatures under load, causing thermal throttling and system instability.",
+        "approach": "Ran stress benchmarks and monitored thermals to confirm GPU overheating as root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.",
+        "outcome": "Temperatures reduced to safe operating range. System stable under sustained load with documented before/after thermal profiles.",
+        "relevance": "Hardware diagnostics, reliability engineering, preventive maintenance, benchmarking",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/gpu.html"
+      }
+    },
+
+    {
+      "id": "portfolio-site",
+      "title": "Personal Portfolio Website",
+      "sponsor": "Personal Project",
+      "category": "Web Development",
+      "date": null,
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Designed and built a responsive personal portfolio site from scratch using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, deployed via <strong>Cloudflare</strong>.",
+          "Iterated on design and content based on feedback, producing a maintainable site with a consistent design system and project documentation."
+        ]
+      },
+
+      "website": {
+        "problem": "Needed a centralized, professional platform to document and present technical projects to recruiters and employers.",
+        "approach": "Designed and built kevinmonsen.com from scratch — custom <strong>HTML/CSS/JS</strong>, teal accent design system, deployed through <strong>Cloudflare</strong> with CDN and DNS configuration. Iterated on layout, copy, and project pages based on career center feedback.",
+        "outcome": "Live production site serving as the primary professional presence, linked across LinkedIn, resume, Handshake, and CareerLink.",
+        "relevance": "Web development, HTML/CSS/JS, deployment, DNS, version control, design systems",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/site.html"
+      }
+    },
+
+    {
+      "id": "lodge-wordpress",
+      "title": "Lodge WordPress Site (Production)",
+      "sponsor": "Volunteer Project — OA Ohlone Lodge 63",
+      "category": "Web Development",
+      "date": null,
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Built and launched a production <strong>WordPress</strong> site for a scout organization, prioritizing maintainability by non-technical future leaders.",
+          "Produced plugin and workflow documentation and trained an adult leader for long-term continuity and knowledge transfer."
+        ]
+      },
+
+      "website": {
+        "problem": "Scout lodge needed a reliable, publicly accessible website manageable by volunteers with no web development background.",
+        "approach": "Chose <strong>WordPress</strong> over a custom build deliberately — prioritizing long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.",
+        "outcome": "Live site at ohlone63.org serving active lodge membership. Handed off with full documentation and a trained maintainer.",
+        "relevance": "Production systems, WordPress, user-focused design, documentation, knowledge transfer",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/ohlone.html"
+      }
+    },
+
+    {
+      "id": "stm-site",
+      "title": "Scottsdale Technology Management Website",
+      "sponsor": "Design Exercise",
+      "category": "Web Development",
+      "date": null,
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Designed and deployed a professional services website for a technology management firm concept, emphasizing usability and long-term maintainability.",
+          "Applied design system principles to produce a production-ready site meeting defined usability and maintainability criteria."
+        ]
+      },
+
+      "website": {
+        "problem": "Needed a design exercise to explore what a professional MSP firm's online presence should look like — usable, credible, and maintainable.",
+        "approach": "Designed and built a full professional services site with service pages, about section, and contact flow. Focused on clarity and long-term maintainability over visual complexity.",
+        "outcome": "Production-ready site deployed as a portfolio and design reference for future MSP work.",
+        "relevance": "Usability, professional design, maintainability, web development",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/stm.html"
+      }
+    },
+
+    {
+      "id": "ai-essay-tool",
+      "title": "AI Essay Feedback Tool",
+      "sponsor": "Hackathon Project",
+      "category": "Software Engineering",
+      "date": null,
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Led a 3-day hackathon sprint building an AI-powered essay feedback tool; designed UI/UX in <strong>Google Stitch</strong> and implemented backend in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API.",
+          "Presented working prototype to a panel of evaluators; used AI-assisted development throughout to maintain code quality under time pressure."
+        ]
+      },
+
+      "website": {
+        "problem": "Students lack access to immediate, structured feedback on essay quality between drafts.",
+        "approach": "Led a 3-person team through a hackathon sprint. Designed the UI in <strong>Google Stitch</strong>, implemented structured rubric-based feedback logic in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API, and used <strong>Kiro</strong> as the primary AI development tool throughout.",
+        "outcome": "Working prototype delivered and presented to evaluators within the hackathon window.",
+        "relevance": "Full-stack development, AI integration, TypeScript, rapid prototyping, project leadership",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "kevinmonsen.com/essay.html"
+      }
+    },
+
+    {
+      "id": "kiro-chrome-extension",
+      "title": "Kiro Spark Hackathon — Chrome Extension",
+      "sponsor": "Hackathon Project — Kiro Spark Challenge",
+      "category": "Software Engineering",
+      "date": "2025",
+      "resume_rank": null,
+
+      "resume": {
+        "bullets": [
+          "Built a full-stack <strong>Chrome extension</strong> in a 12-hour hackathon with a 3-person team, integrating six external APIs and services using <strong>Kiro</strong> as the primary AI development tool.",
+          "Delivered a working, demo-ready product end-to-end within the competition window."
+        ]
+      },
+
+      "website": {
+        "problem": "TODO",
+        "approach": "TODO",
+        "outcome": "TODO",
+        "relevance": "Full-stack development, Chrome extensions, API integration, rapid prototyping, team collaboration",
+        "essay": "TODO",
+        "image_path": "TODO",
+        "image_caption": "TODO",
+        "page_url": "TODO"
+      }
+    }
+  ]
+}
