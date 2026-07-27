@@ -318,19 +318,11 @@ function buildAccordion() {
     html += `            <div class="panel-body">\n`;
     html += `              <ul>\n`;
 
-    if (projects.length === 1) {
-      // Single project — match site's <p> style for solo entries
-      html += `                <p>\n`;
-      html += projectCard(projects[0]);
-      html += `\n                </p>\n`;
-    } else {
-      // Multiple projects — one <li> each
-      for (const proj of projects) {
-        html += `                <li>\n`;
-        html += projectCard(proj);
-        html += `\n                <br><br>\n`;
-        html += `                </li>\n`;
-      }
+     for (const proj of projects) {
+      html += `                <li>\n`;
+      html += projectCard(proj);
+      html += `\n                <br><br>\n`;
+      html += `                </li>\n`;
     }
 
     html += `              </ul>\n`;
@@ -536,7 +528,12 @@ function docxToPdf(docxPath, outDir) {
     }
   }
 }
-
+function writeManifest(pages) {
+  fs.writeFileSync(
+    path.join(DIST, "generated-pages.json"),
+    JSON.stringify({ pages }, null, 2)
+  );
+}
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -576,6 +573,9 @@ async function main() {
     fs.writeFileSync(pagePath, buildProjectPage(proj));
     console.log(`  ✓ ${pagePath}`);
   }
+  const generatedPages = profile.projects.map(p => `${p.id}.html`);
+  writeManifest(generatedPages);
+  console.log(`  ✓ generated-pages.json (${generatedPages.length} pages tracked)`);
 
   // 5. Summary
   const topN = profile._meta.resume_top_n;
