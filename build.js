@@ -282,9 +282,7 @@ function buildAccordion() {
   // Inner HTML for one project card — shared by <p> and <li> variants
   function projectCard(proj) {
     const w    = proj.website;
-    const href = (w.page_url && w.page_url !== "TODO")
-      ? "./" + w.page_url.replace(/^kevinmonsen\.com\//, "")
-      : null;
+    const href = `./${proj.id}.html`;
 
     let card = "";
     card += `                  <b>Project Title</b>: ${escHtml(proj.title)}<br>\n`;
