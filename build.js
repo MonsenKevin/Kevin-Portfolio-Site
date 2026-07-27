@@ -195,8 +195,8 @@ function buildDocx() {
   children.push(sectionHeading("Work Experience"));
   for (const job of p.work_experience) {
     children.push(twoCol(
-      [new TextRun({ text: `${job.employer}, ${job.location}: `, bold: true, size: 20, font: "Calibri" }),
-       new TextRun({ text: `${job.title} (${job.hours_per_week} hours/week)`, size: 20, font: "Calibri" })],
+      [new TextRun({ text: `${job.employer}: `, bold: true, size: 20, font: "Calibri" }),
+       new TextRun({ text: `${job.title} (${job.hours_per_week} hours/week) - ${job.location}`, size: 20, font: "Calibri" })],
       `${job.start_date} – ${job.end_date}`,
       { before: 80, after: 0, rightSize: 20 }
     ));
