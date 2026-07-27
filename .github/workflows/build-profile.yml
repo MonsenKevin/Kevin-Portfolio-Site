@@ -37,13 +37,15 @@ jobs:
       # no longer generated (handles renames, removals, id changes).
       - name: Remove stale pages
         run: |
-          MANIFEST="dist/generated-pages.json"
-          PREV_MANIFEST="generated-pages.json"   # committed copy from last build
+          PREV_MANIFEST="generated-pages.json"
+          NEW_MANIFEST="dist/generated-pages.json"
 
-          if [ -f "$PREV_MANIFEST" ]; then
+          if [ ! -f "$NEW_MANIFEST" ]; then
+            echo "No manifest produced by build — skipping stale check."
+          elif [ -f "$PREV_MANIFEST" ]; then
             echo "Checking for stale pages…"
             OLD=$(jq -r '.pages[]' "$PREV_MANIFEST")
-            NEW=$(jq -r '.pages[]' "$MANIFEST")
+            NEW=$(jq -r '.pages[]' "$NEW_MANIFEST")
             for page in $OLD; do
               if ! echo "$NEW" | grep -qx "$page"; then
                 if [ -f "$page" ]; then

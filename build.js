@@ -498,6 +498,13 @@ function docxToPdf(docxPath, outDir) {
   }
 }
 
+function writeManifest(pages) {
+  fs.writeFileSync(
+    path.join(DIST, "generated-pages.json"),
+    JSON.stringify({ pages }, null, 2)
+  );
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
