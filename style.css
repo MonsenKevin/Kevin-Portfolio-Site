@@ -695,6 +695,9 @@ section.Projects .accordion {
   margin-bottom: 8px;
   justify-content: center;
 }
+.project-link{
+  fill: #2C7A7B;
+}
 
 .chip {
   font-size: 0.82rem;
