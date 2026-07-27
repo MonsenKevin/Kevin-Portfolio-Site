@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Network Infrastructure Upgrade — Kevin Monsen Portfolio</title>
-  <link rel="canonical" href="https://kevinmonsen.com/home-network.html">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Monsen Portfolio</title>
+    <link rel="canonical" href="https://kevinmonsen.com/home-network.html">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
 </head>
+
 <body>
+    <div class="showcase">
+        <section class="problem-solver">
+            <div class="grid">
+                <div class="column">
+                    <a href="./" class="back-btn">← Return Home</a>
+                <!-- TODO: add hero image
+                <figure class="leadership-media" aria-hidden="true">
+                    <img src="./images/home-network.png" alt="" />
+                    <figcaption class="sr-only">Caption here</figcaption>
+                </figure> -->
+                </div>
 
-  <nav><a href="index.html">← Return Home</a></nav>
-
-  <!-- TODO: Add hero image
-  <figure>
-    <img src="images/home-network.jpg" alt="Home Network Infrastructure Upgrade">
-    <figcaption>Caption here</figcaption>
-  </figure> -->
-
-  <article class="project-page">
-
-    <header>
-      <h2>Home Network Infrastructure Upgrade</h2>
-      <p class="project-meta">Personal Project · April 2025</p>
-      <div class="tag-list">
-        <span class="tag">Network engineering</span>
-        <span class="tag">Ubiquiti/UniFi</span>
-        <span class="tag">VLANs</span>
-        <span class="tag">documentation</span>
-        <span class="tag">troubleshooting</span>
-      </div>
-    </header>
-
-    <!-- TODO: Replace this block with your essay paragraphs -->
-    <div class="project-essay">
-      <p><strong>Problem:</strong> Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.</p>
-      <p><strong>Approach:</strong> Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.</p>
-      <p><strong>Outcome:</strong> Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.</p>
+                <!-- Right: content -->
+                <div class="content">
+                    <h2 id="home-network">Home Network Infrastructure Upgrade</h2>
+                    <div class="metrics">
+                        <span class="chip">Network engineering</span>
+                        <span class="chip">Ubiquiti/UniFi</span>
+                        <span class="chip">VLANs</span>
+                        <span class="chip">documentation</span>
+                        <span class="chip">troubleshooting</span>
+                    </div>
+                    <p class="intro">
+                        <!-- TODO: replace with your written paragraphs -->
+                    <p><strong>Problem:</strong> Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.</p>
+                    <p><strong>Approach:</strong> Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.</p>
+                    <p><strong>Outcome:</strong> Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.</p>
+                    </p>
+                    <!-- no CTA for this project -->
+                </div>
+        </section>
     </div>
-
-  </article>
-
 </body>
+
 </html>
