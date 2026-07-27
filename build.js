@@ -369,7 +369,14 @@ function buildProjectPage(proj) {
 </html>
 `;
 }
+// ─── Manifest Writer ─────────────────────────────────────────────────────────
 
+function writeManifest(pages) {
+  fs.writeFileSync(
+    path.join(DIST, "generated-pages.json"),
+    JSON.stringify({ pages }, null, 2)
+  );
+}
 // ─── Accordion Injector ───────────────────────────────────────────────────────
 /**
  * Reads index.html, replaces everything between the marker comments with the
@@ -505,6 +512,9 @@ async function main() {
     fs.writeFileSync(pagePath, buildProjectPage(proj));
     console.log(`  ✓ ${pagePath}`);
   }
+  const generatedPages = profile.projects.map(p => `${p.id}.html`);
+  writeManifest(generatedPages);
+  console.log(`  ✓ generated-pages.json (${generatedPages.length} pages tracked)`);
 
   // 5. Summary
   const topN = profile._meta.resume_top_n;
