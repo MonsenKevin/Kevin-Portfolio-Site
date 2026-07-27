@@ -232,7 +232,6 @@ body {
 
 .leadership {
   padding: 48px 20px;
-  border-top: 2px solid rgba(44, 122, 123, 0.25);
 }
 
 /* Grid: image left, content right */
@@ -397,7 +396,6 @@ body {
 .engineering {
   background: #F1F5F9;
   padding: 48px 20px;
-  border-top: 2px solid rgba(44, 122, 123, 0.25);
 }
 
 .engineer-media img {
@@ -412,7 +410,6 @@ body {
 }
 .problem-solver {
   padding: 48px 20px;
-  border-top: 2px solid rgba(44, 122, 123, 0.25);
   background: #F8FAFC;
 }
 .engineer-media {
