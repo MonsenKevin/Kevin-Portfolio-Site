@@ -544,6 +544,9 @@ async function main() {
     fs.writeFileSync(pagePath, buildProjectPage(proj));
     console.log(`  ✓ ${pagePath}`);
   }
+  const generatedPages = profile.projects.map(p => `${p.id}.html`);
+  writeManifest(generatedPages);
+  console.log(`  ✓ generated-pages.json (${generatedPages.length} pages tracked)`);
 
   // 5. Summary
   const topN = profile._meta.resume_top_n;
