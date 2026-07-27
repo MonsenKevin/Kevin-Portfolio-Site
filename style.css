@@ -693,6 +693,7 @@ section.Projects .accordion {
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 8px;
+  justify-content: center;
 }
 
 .chip {
