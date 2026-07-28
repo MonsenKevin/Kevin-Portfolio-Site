@@ -264,7 +264,7 @@
         "relevance": "Hardware diagnostics, reliability engineering, preventive maintenance, benchmarking",
         "essay": "Investigated repeated system crashes occurring during moderate gaming workloads by running performance and temperature tests, which identified inadequate GPU thermal performance as the root cause. \n \n Disassembled the graphics card, removed degraded thermal compound, and applied PTM7950 to restore effective heat transfer between the GPU die and cooling solution. \n\n The intervention significantly reduced operating temperatures and resulted in a more stable and reliable system under sustained load.",
         "image_path": "./images/repaste.jpeg",
-        "image_caption": "GPU Die",
+        "image_caption": "GPU Die"
       }
     },
 
@@ -290,7 +290,7 @@
         "relevance": "Web development, HTML/CSS/JS, deployment, DNS, version control, design systems",
         "essay": "Designed and developed a custom portfolio website using HTML, CSS, and JavaScript to showcase engineering projects, technical skills, and experience. The site was built from scratch with a focus on clarity, usability, and maintainability. \n \n Implemented a bold typographic layout on the homepage to immediately engage visitors, while maintaining a restrained color palette to communicate professionalism and technical competence. Design decisions were guided by readability and effective information hierarchy. \n \n Deployed the site using GitHub Pages as a cost-effective and reliable hosting solution for static web applications. \n \n Later upgraded with GitHub Actions to auto-generate project pages based on information in a json file",
         "image_path": "./images/portfolio.png",
-        "image_caption": "Home Page of Portfolio Site",
+        "image_caption": "Home Page of Portfolio Site"
       }
     },
 
