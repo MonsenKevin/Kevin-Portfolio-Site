@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "profile.json"
+      - "build.js"
   workflow_dispatch:
 
 jobs:
