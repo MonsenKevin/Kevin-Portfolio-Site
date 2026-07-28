@@ -383,7 +383,7 @@ function buildProjectPage(proj) {
                     <p><strong>Problem:</strong> ${escHtml(stripTags(w.problem))}</p>
                     <p><strong>Approach:</strong> ${sanitizeHtml(w.approach)}</p>
                     <p><strong>Outcome:</strong> ${escHtml(stripTags(w.outcome))}</p>`;
-
+  essayBlock.replaceAll("\n", "<br>");
   // CTA button block
   const ctaBlock = hasCta
     ? `                    <div class="cta-buttons">
