@@ -131,9 +131,9 @@
         "approach": "Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.",
         "outcome": "Completed CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control gap recommendations.",
         "relevance": "SIEM operations, threat hunting, log analysis, KQL, incident documentation, forensics",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
+        "essay": "Participated in Tracer FIRE, a hands-on cybersecurity incident response training program run by Sandia National Laboratories. The exercise simulated a real-world post-breach environment, placing participants in a SOC analyst role tasked with reconstructing attacker activity from raw log data. \n\nThe primary investigation tool was Azure Data Explorer (ADX), used to write KQL queries against large datasets of event logs, network telemetry, and endpoint activity. Elastic SIEM served as the correlation platform, surfacing alerts and supporting timeline reconstruction across distributed log sources. Wireshark was used to inspect packet captures and validate network-level findings. \n\nThe exercise was structured as a CTF — each finding unlocked further investigation paths. Work included identifying indicators of compromise, tracing lateral movement, detecting persistence mechanisms, and producing structured incident documentation matching the format used in professional SOC environments. <br><br>",
+        "image_path": "./images/dash.png",
+        "image_caption": "./images/tracer.jpeg",
         "page_url": "kevinmonsen.com/tracer.html"
       }
     },
@@ -158,10 +158,10 @@
         "approach": "Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.",
         "outcome": "Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.",
         "relevance": "Embedded systems, C++, IoT platforms, remote access, network security",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "TODO"
+        "essay": "I origionally started this project simply to be able to turn my computer on and off from my phone but it quickly expaned use cases. Wrote a full write up on LinkedIn",
+        "image_path": "./images/ESP32.jpeg",
+        "image_caption": "The ESP32 that controls the power switch of my PC",
+        "cta": { "label": "View Article", "url": "https://www.linkedin.com/pulse/engineering-power-solution-esp32-kevin-monsen-efcpc/" }
       }
     },
 
@@ -185,10 +185,7 @@
         "approach": "Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.",
         "outcome": "50+ users migrated successfully with no service interruption. Eliminated $200/year in fees and left the organization with a maintainable, documented system.",
         "relevance": "Change management, Google Workspace, DNS, IT documentation, stakeholder communication",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "TODO"
+        "essay": "The Order of the Arrow lodge that I was a member of was moving off Network Solutions to achive better performance for the WordPress site I made. Doing so would make us lose our email solution unless we wanted to pay a per mailbox subscription cost. I throughly evaluated all of the different solutions and landed on Google Workspace. Becuase we were a non-profit we qualified for free Google Workspace accounts that would let us reduce our total email cost to zero. \n \n I worked with an adviser to navigate the non-profit status approval, migrate email data, and set up mailboxes. \n\n Becuase of youth protection requierments all emails that contain a person under 18 must have at least 2 adults on the communication chain. To achompish this we set up the email aliases to forward to personal email adresses of the youth recipient and adult advisers, enabling automatic complience"
       }
     },
 
@@ -212,10 +209,9 @@
         "approach": "Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.",
         "outcome": "Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.",
         "relevance": "Network engineering, Ubiquiti/UniFi, VLANs, documentation, troubleshooting",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/network.html"
+        "essay": "Diagnosed recurring wireless network failures caused by a degrading all-in-one consumer router. After evaluating replacement options, recommended migrating to a Ubiquiti-based network to improve reliability, visibility, and configuration control. \n \n Assisted with the installation and configuration of Ubiquiti networking hardware, including access points and switching infrastructure. Following deployment, created a detailed network diagram documenting device connections and switch port assignments to improve long-term maintainability and troubleshooting. \n \n Since the migration, the network has operated reliably with no reported connectivity issues.",
+        "image_path": "./images/map.png",
+        "image_caption": "Sample Network Map of Unifi Network",
       }
     },
 
@@ -238,11 +234,11 @@
         "problem": "Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.",
         "approach": "Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.",
         "outcome": "Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.",
-        "relevance": "Embedded systems, Python, Gemini API, AI-assisted development, hardware integration, testing",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/fse.html"
+        "relevance": "Embedded systems, Python, Gemini API, AI-assisted Development",
+        "essay": "For our FSE 100 project at Arizona State University my team was tasked to create an assistance for a group of people. Afte hearing the interviews that we were provided we realized that people with vision imparments have a hard time with head-high objects and wanted to make a solution to help warn them before they hit an obstacle \n \n Our solution involed a combonation of a webcam and ultrasonic sensor. The ultrasonic sensor warned am immanate danger with a loud buzzer sound while the webcam was connected to an OpenAI API which detected if there were any obstacles farther out which then warned the user with a vibration. The whole thing had a button to turn it off should the user be sitting on public transist where there would e many close obstacles. We used async Python functions to allow the ultrasonic senor to continue to work while the webcam was waiting for a response  \n\n The compute was done on a Raspbery Pi 4B and the main hardware was stored in a fanny pack. The ultrasonic senor and webcam was housed on top of a baseball cap with the wires carfully managed. \n\n The end result impressed the professor enough for him to keep our design around for an example for next year",
+        "image_path": "./images/Engineer.png",
+        "image_caption": "The final sensor array",
+        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/AI-Vision-Assistance" }
       }
     },
 
@@ -266,10 +262,9 @@
         "approach": "Ran stress benchmarks and monitored thermals to confirm GPU overheating as root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.",
         "outcome": "Temperatures reduced to safe operating range. System stable under sustained load with documented before/after thermal profiles.",
         "relevance": "Hardware diagnostics, reliability engineering, preventive maintenance, benchmarking",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/gpu.html"
+        "essay": "Investigated repeated system crashes occurring during moderate gaming workloads by running performance and temperature tests, which identified inadequate GPU thermal performance as the root cause. \n \n Disassembled the graphics card, removed degraded thermal compound, and applied PTM7950 to restore effective heat transfer between the GPU die and cooling solution. \n\n The intervention significantly reduced operating temperatures and resulted in a more stable and reliable system under sustained load.",
+        "image_path": "./images/repaste.jpeg",
+        "image_caption": "GPU Die",
       }
     },
 
@@ -293,10 +288,9 @@
         "approach": "Designed and built kevinmonsen.com from scratch — custom <strong>HTML/CSS/JS</strong>, teal accent design system, deployed through <strong>Cloudflare</strong> with CDN and DNS configuration. Iterated on layout, copy, and project pages based on career center feedback.",
         "outcome": "Live production site serving as the primary professional presence, linked across LinkedIn, resume, Handshake, and CareerLink.",
         "relevance": "Web development, HTML/CSS/JS, deployment, DNS, version control, design systems",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/site.html"
+        "essay": "Designed and developed a custom portfolio website using HTML, CSS, and JavaScript to showcase engineering projects, technical skills, and experience. The site was built from scratch with a focus on clarity, usability, and maintainability. \n \n Implemented a bold typographic layout on the homepage to immediately engage visitors, while maintaining a restrained color palette to communicate professionalism and technical competence. Design decisions were guided by readability and effective information hierarchy. \n \n Deployed the site using GitHub Pages as a cost-effective and reliable hosting solution for static web applications. \n \n Later upgraded with GitHub Actions to auto-generate project pages based on information in a json file",
+        "image_path": "./images/portfolio.png",
+        "image_caption": "Home Page of Portfolio Site",
       }
     },
 
@@ -320,10 +314,10 @@
         "approach": "Chose <strong>WordPress</strong> over a custom build deliberately — prioritizing long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.",
         "outcome": "Live site at ohlone63.org serving active lodge membership. Handed off with full documentation and a trained maintainer.",
         "relevance": "Production systems, WordPress, user-focused design, documentation, knowledge transfer",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/ohlone.html"
+        "essay": "As Secretary for Ohlone Lodge, led a full redesign and migration of the organization’s website to improve usability, maintainability, and performance. Within one week, migrated all existing content from the legacy site to a new WordPress-based platform while preserving accuracy and continuity. \n\n WordPress was selected intentionally to support non-technical future site administrators. While a custom HTML/CSS/JavaScript solution was possible, prioritizing long-term usability and ease of content management enabled future secretaries to update the site without technical barriers. This user-focused approach informed key architectural decisions throughout the project. \n\n Following the redesign, investigated performance degradation and identified issues caused by residual plugin files and insufficient hosting resources. Cleaned up unused assets and evaluated alternative hosting providers to improve site performance and cost efficiency. After selecting WP Engine as a suitable hosting solution, collaborated with other members of the site team to plan and execute the hosting migration. \n\n The final result is a responsive, performant, and easy-to-maintain website designed to support the organization’s needs for years to come.",
+        "image_path": "./images/ohlone.png",
+        "image_caption": "Home Page of Ohlone Lodge",
+        "cta": { "label": "Visit Site", "url": "https://www.ohlone63.org" }
       }
     },
 
@@ -374,10 +368,10 @@
         "approach": "Led a 3-person team through a hackathon sprint. Designed the UI in <strong>Google Stitch</strong>, implemented structured rubric-based feedback logic in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API, and used <strong>Kiro</strong> as the primary AI development tool throughout.",
         "outcome": "Working prototype delivered and presented to evaluators within the hackathon window.",
         "relevance": "Full-stack development, AI integration, TypeScript, rapid prototyping, project leadership",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "kevinmonsen.com/essay.html"
+        "essay": "As a college student I had always found that the hardest part of essay writing was feedback. I could read my work over and over again but still not be satisfied with the writing but be at a loss on what to do. I also knew that many of my peers started their essays late at night, after the tutoring center was closed, therefore it was even more imparative for them to have access to a way to get feedback on their writing 24/7. \n\n Many students have in recent years turned to artifical inteligence models to give feedback on their work but if done improperly can lead to the model writing the essay for them. This not only breaks acedemic integrety but hinders their growth as a writer. \n\n Enter Midnight Tutor, my team's solution to this challenge. Students upload their essay, prompt, and rubric and get detailed feedback on where they can improve. It also has a brainstorming feature to help get the writing jucies flowing",
+        "image_path": "./images/ai-tutor.png",
+        "image_caption": "Homepage of Midnight Tutor",
+        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/AI-Writing-Tutor"}
       }
     },
 
@@ -397,14 +391,14 @@
       },
 
       "website": {
-        "problem": "TODO",
-        "approach": "TODO",
-        "outcome": "TODO",
+        "problem": "Employees feel lost once you finish onboarding them and have no idea who to contact if they need more support or who last worked on the project they were assigned to",
+        "approach": "Built Afloat, an ever-boarding tool that lets employees ask questions, lets managers check in, and give easy access to the company wide knowlage base with natural language queries",
+        "outcome": "Employees feel more supported and are less stuck as they adapt to company culture and knowlage. Managers get greater insights on how their new employees are feeling and can support them better",
         "relevance": "Full-stack development, Chrome extensions, API integration, rapid prototyping, team collaboration",
-        "essay": "TODO",
-        "image_path": "TODO",
-        "image_caption": "TODO",
-        "page_url": "TODO"
+        "essay": "For this hackathon we were tasked with solving an ecenomic problem using Krio AI, Amazon's coding assistant. My team decided to tackle the cost of onboarding that face companies every year. The average direct cost to onboard a new employee is $4,100, according to benchmark data from the Society for Human Resource Management (SHRM). When including indirect hidden expenses like manager time and lost productivity, the total investment often reaches 20% to 30% of the employee’s first-year salary. Therefore it is critical that the turn over rate remain low, which can be acomplished by making the employee feel welcome and supported. \n \n The issue we addressed in our project is a new employee feeling stuck because they have no idea who to talk to in order to get the background on the project they are working on or how to find anything in the company knowlage base. By giving them an AI assistant that can connect them with people we enable deeper collaboration an knowlage sharing. It also includes a survey fuction so the manager can check in with each team member to make sure they are doing well",
+        "image_path": "./images/afloat.png",
+        "image_caption": "Manager view of Afloat",
+        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/afloat"}
       }
     }
   ]

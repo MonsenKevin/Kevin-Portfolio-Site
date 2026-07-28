@@ -294,8 +294,6 @@ function buildAccordion() {
       card += `                  <b>Approach</b>: ${sanitizeHtml(w.approach)}<br>\n`;
     if (w.outcome && w.outcome !== "TODO")
       card += `                  <b>Outcome</b>: ${escHtml(stripTags(w.outcome))}<br>\n`;
-    if (w.relevance)
-      card += `                  <b>Relevance</b>: ${escHtml(w.relevance)}<br>\n`;
     if (href)
       card += `                  <a href="${escHtml(href)}" class="project-link">View project →</a>`;
     return card;
