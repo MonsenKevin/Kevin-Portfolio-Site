@@ -211,7 +211,7 @@
         "relevance": "Network engineering, Ubiquiti/UniFi, VLANs, documentation, troubleshooting",
         "essay": "Diagnosed recurring wireless network failures caused by a degrading all-in-one consumer router. After evaluating replacement options, recommended migrating to a Ubiquiti-based network to improve reliability, visibility, and configuration control. \n \n Assisted with the installation and configuration of Ubiquiti networking hardware, including access points and switching infrastructure. Following deployment, created a detailed network diagram documenting device connections and switch port assignments to improve long-term maintainability and troubleshooting. \n \n Since the migration, the network has operated reliably with no reported connectivity issues.",
         "image_path": "./images/map.png",
-        "image_caption": "Sample Network Map of Unifi Network",
+        "image_caption": "Sample Network Map of Unifi Network"
       }
     },
 
