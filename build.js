@@ -377,7 +377,7 @@ function buildProjectPage(proj) {
                 </figure> -->`;
 
   // Essay / intro block
-  const essayBlock = hasEssay
+  let essayBlock = hasEssay
     ? w.essay
     : `<!-- TODO: replace with your written paragraphs -->
                     <p><strong>Problem:</strong> ${escHtml(stripTags(w.problem))}</p>
