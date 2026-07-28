@@ -383,7 +383,8 @@ function buildProjectPage(proj) {
                     <p><strong>Problem:</strong> ${escHtml(stripTags(w.problem))}</p>
                     <p><strong>Approach:</strong> ${sanitizeHtml(w.approach)}</p>
                     <p><strong>Outcome:</strong> ${escHtml(stripTags(w.outcome))}</p>`;
-  essayBlock.replaceAll("nl", "<br>");
+  // Replace newline characters from profile.json with <br> for HTML output
+  essayBlock = essayBlock.replace(/\r?\n/g, "<br>");
   // CTA button block
   const ctaBlock = hasCta
     ? `                    <div class="cta-buttons">
@@ -485,7 +486,12 @@ function injectAccordion(accordionHtml) {
 // ─── HTML helpers ─────────────────────────────────────────────────────────────
 
 function escHtml(str) {
-  return (str || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return (str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/\r?\n/g, "<br>");
 }
 
 /** Allow only <strong> tags through; escape everything else */
