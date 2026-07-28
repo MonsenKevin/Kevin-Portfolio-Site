@@ -16,11 +16,10 @@
             <div class="grid">
                 <div class="column">
                     <a href="./" class="back-btn">← Return Home</a>
-                <!-- TODO: add hero image
                 <figure class="leadership-media" aria-hidden="true">
-                    <img src="./images/ai-vision.png" alt="" />
-                    <figcaption class="sr-only">Caption here</figcaption>
-                </figure> -->
+                    <img src="./images/Engineer.png" alt="" />
+                    <figcaption class="sr-only">The final sensor array</figcaption>
+                </figure>
                 </div>
 
                 <!-- Right: content -->
@@ -30,14 +29,14 @@
                         <span class="chip">Embedded systems</span>
                         <span class="chip">Python</span>
                         <span class="chip">Gemini API</span>
-                        <span class="chip">AI-assisted development</span>
-                        <span class="chip">hardware integration</span>
-                        <span class="chip">testing</span>
+                        <span class="chip">AI-assisted Development</span>
                     </div>
                     <p class="intro">
-                        <!-- TODO: replace with your written paragraphs --><br>                    <p><strong>Problem:</strong> Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.</p><br>                    <p><strong>Approach:</strong> Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.</p><br>                    <p><strong>Outcome:</strong> Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.</p>
+                        For our FSE 100 project at Arizona State University my team was tasked to create an assistance for a group of people. Afte hearing the interviews that we were provided we realized that people with vision imparments have a hard time with head-high objects and wanted to make a solution to help warn them before they hit an obstacle <br> <br> Our solution involed a combonation of a webcam and ultrasonic sensor. The ultrasonic sensor warned am immanate danger with a loud buzzer sound while the webcam was connected to an OpenAI API which detected if there were any obstacles farther out which then warned the user with a vibration. The whole thing had a button to turn it off should the user be sitting on public transist where there would e many close obstacles. We used async Python functions to allow the ultrasonic senor to continue to work while the webcam was waiting for a response  <br><br> The compute was done on a Raspbery Pi 4B and the main hardware was stored in a fanny pack. The ultrasonic senor and webcam was housed on top of a baseball cap with the wires carfully managed. <br><br> The end result impressed the professor enough for him to keep our design around for an example for next year
                     </p>
-                    <!-- no CTA for this project -->
+                    <div class="cta-buttons">
+                        <a href="https://github.com/MonsenKevin/AI-Vision-Assistance">View Code</a>
+                    </div>
                 </div>
         </section>
     </div>

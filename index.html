@@ -450,7 +450,6 @@
                     <b>Problem</b>: Simulated post-breach environment requiring forensic investigation of attacker activity across a compromised SOC network.<br>
                     <b>Approach</b>: Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.<br>
                     <b>Outcome</b>: Completed CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control gap recommendations.<br>
-                    <b>Relevance</b>: SIEM operations, threat hunting, log analysis, KQL, incident documentation, forensics<br>
                     <a href="./tracer-fire.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -473,7 +472,6 @@
                     <b>Problem</b>: Needed a reliable way to remotely power-cycle a home PC from out of state without expensive KVM-over-IP hardware.<br>
                     <b>Approach</b>: Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.<br>
                     <b>Outcome</b>: Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.<br>
-                    <b>Relevance</b>: Embedded systems, C++, IoT platforms, remote access, network security<br>
                     <a href="./iot-remote-pc.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -482,7 +480,6 @@
                     <b>Problem</b>: Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.<br>
                     <b>Approach</b>: Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.<br>
                     <b>Outcome</b>: Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.<br>
-                    <b>Relevance</b>: Embedded systems, Python, Gemini API, AI-assisted development, hardware integration, testing<br>
                     <a href="./ai-vision.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -491,7 +488,6 @@
                     <b>Problem</b>: High-end GPU running at unsafe temperatures under load, causing thermal throttling and system instability.<br>
                     <b>Approach</b>: Ran stress benchmarks and monitored thermals to confirm GPU overheating as root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.<br>
                     <b>Outcome</b>: Temperatures reduced to safe operating range. System stable under sustained load with documented before/after thermal profiles.<br>
-                    <b>Relevance</b>: Hardware diagnostics, reliability engineering, preventive maintenance, benchmarking<br>
                     <a href="./gpu-thermal.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -515,7 +511,6 @@
                     <b>Problem</b>: Scout organization running a legacy email platform that was unreliable, costly, and not manageable by non-technical volunteers.<br>
                     <b>Approach</b>: Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.<br>
                     <b>Outcome</b>: 50+ users migrated successfully with no service interruption. Eliminated $200/year in fees and left the organization with a maintainable, documented system.<br>
-                    <b>Relevance</b>: Change management, Google Workspace, DNS, IT documentation, stakeholder communication<br>
                     <a href="./workspace-migration.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -538,7 +533,6 @@
                     <b>Problem</b>: Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.<br>
                     <b>Approach</b>: Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.<br>
                     <b>Outcome</b>: Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.<br>
-                    <b>Relevance</b>: Network engineering, Ubiquiti/UniFi, VLANs, documentation, troubleshooting<br>
                     <a href="./home-network.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -561,7 +555,6 @@
                     <b>Problem</b>: Needed a centralized, professional platform to document and present technical projects to recruiters and employers.<br>
                     <b>Approach</b>: Designed and built kevinmonsen.com from scratch — custom <strong>HTML/CSS/JS</strong>, teal accent design system, deployed through <strong>Cloudflare</strong> with CDN and DNS configuration. Iterated on layout, copy, and project pages based on career center feedback.<br>
                     <b>Outcome</b>: Live production site serving as the primary professional presence, linked across LinkedIn, resume, Handshake, and CareerLink.<br>
-                    <b>Relevance</b>: Web development, HTML/CSS/JS, deployment, DNS, version control, design systems<br>
                     <a href="./portfolio-site.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -571,7 +564,6 @@
                     <b>Problem</b>: Scout lodge needed a reliable, publicly accessible website manageable by volunteers with no web development background.<br>
                     <b>Approach</b>: Chose <strong>WordPress</strong> over a custom build deliberately — prioritizing long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.<br>
                     <b>Outcome</b>: Live site at ohlone63.org serving active lodge membership. Handed off with full documentation and a trained maintainer.<br>
-                    <b>Relevance</b>: Production systems, WordPress, user-focused design, documentation, knowledge transfer<br>
                     <a href="./lodge-wordpress.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -581,7 +573,6 @@
                     <b>Problem</b>: Needed a design exercise to explore what a professional MSP firm's online presence should look like — usable, credible, and maintainable.<br>
                     <b>Approach</b>: Designed and built a full professional services site with service pages, about section, and contact flow. Focused on clarity and long-term maintainability over visual complexity.<br>
                     <b>Outcome</b>: Production-ready site deployed as a portfolio and design reference for future MSP work.<br>
-                    <b>Relevance</b>: Usability, professional design, maintainability, web development<br>
                     <a href="./stm-site.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -605,14 +596,15 @@
                     <b>Problem</b>: Students lack access to immediate, structured feedback on essay quality between drafts.<br>
                     <b>Approach</b>: Led a 3-person team through a hackathon sprint. Designed the UI in <strong>Google Stitch</strong>, implemented structured rubric-based feedback logic in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API, and used <strong>Kiro</strong> as the primary AI development tool throughout.<br>
                     <b>Outcome</b>: Working prototype delivered and presented to evaluators within the hackathon window.<br>
-                    <b>Relevance</b>: Full-stack development, AI integration, TypeScript, rapid prototyping, project leadership<br>
                     <a href="./ai-essay-tool.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
                   <li>
                     <b>Project Title</b>: Kiro Spark Hackathon — Chrome Extension<br>
                     <b>Sponsor</b>: Hackathon Project — Kiro Spark Challenge<br>
-                    <b>Relevance</b>: Full-stack development, Chrome extensions, API integration, rapid prototyping, team collaboration<br>
+                    <b>Problem</b>: Employees feel lost once you finish onboarding them and have no idea who to contact if they need more support or who last worked on the project they were assigned to<br>
+                    <b>Approach</b>: Built Afloat, an ever-boarding tool that lets employees ask questions, lets managers check in, and give easy access to the company wide knowlage base with natural language queries<br>
+                    <b>Outcome</b>: Employees feel more supported and are less stuck as they adapt to company culture and knowlage. Managers get greater insights on how their new employees are feeling and can support them better<br>
                     <a href="./kiro-chrome-extension.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
