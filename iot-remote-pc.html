@@ -16,11 +16,10 @@
             <div class="grid">
                 <div class="column">
                     <a href="./" class="back-btn">← Return Home</a>
-                <!-- TODO: add hero image
                 <figure class="leadership-media" aria-hidden="true">
-                    <img src="./images/iot-remote-pc.png" alt="" />
-                    <figcaption class="sr-only">Caption here</figcaption>
-                </figure> -->
+                    <img src="./images/ESP32.jpeg" alt="" />
+                    <figcaption class="sr-only">The ESP32 that controls the power switch of my PC</figcaption>
+                </figure>
                 </div>
 
                 <!-- Right: content -->
@@ -34,9 +33,11 @@
                         <span class="chip">network security</span>
                     </div>
                     <p class="intro">
-                        <!-- TODO: replace with your written paragraphs --><br>                    <p><strong>Problem:</strong> Needed a reliable way to remotely power-cycle a home PC from out of state without expensive KVM-over-IP hardware.</p><br>                    <p><strong>Approach:</strong> Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.</p><br>                    <p><strong>Outcome:</strong> Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.</p>
+                        I origionally started this project simply to be able to turn my computer on and off from my phone but it quickly expaned use cases. Wrote a full write up on LinkedIn
                     </p>
-                    <!-- no CTA for this project -->
+                    <div class="cta-buttons">
+                        <a href="https://www.linkedin.com/pulse/engineering-power-solution-esp32-kevin-monsen-efcpc/">View Article</a>
+                    </div>
                 </div>
         </section>
     </div>
