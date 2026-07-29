@@ -19,7 +19,7 @@
   text-underline-offset: 3px;
   background: none;
   border: none;
-  padding: 0 0 25px 0;
+  padding: 20px 0 25px 0;
   transition: opacity 0.2s ease;
   display: block;
   text-align: left;
@@ -937,14 +937,6 @@ footer a {
   background: #2C7A7B;
 }
 
-.resume-title {
-  display: flex;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 .column{
   display: flex;
   flex-direction: column;
