@@ -275,6 +275,7 @@ function buildAccordion() {
   // Group projects by category, preserving insertion order
   const groups = {};
   for (const proj of profile.projects) {
+    if (!hasWebsite(proj)) continue;
     const cat = proj.category || "Other";
     (groups[cat] = groups[cat] || []).push(proj);
   }
@@ -313,7 +314,6 @@ function buildAccordion() {
     html += `          <div class="panel" role="region" aria-hidden="true">\n`;
     html += `            <div class="panel-body">\n`;
     html += `              <ul>\n`;
-
      for (const proj of projects) {
       html += `                <li>\n`;
       html += projectCard(proj);
@@ -505,6 +505,10 @@ function sanitizeHtml(str) {
     .replace(/\x01CLOSE\x01/g, "</strong>");
 }
 
+function hasWebsite(proj) {
+  return proj.website && typeof proj.website === "object";
+}
+
 // ─── PDF via LibreOffice ───────────────────────────────────────────────────────
 
 function docxToPdf(docxPath, outDir) {
@@ -570,12 +574,14 @@ async function main() {
 
   // 4. Project pages
   console.log("  Building project pages …");
+  const generatedPages = [];
   for (const proj of profile.projects) {
+    if (!hasWebsite(proj)) continue;
     const pagePath = path.join(PAGES_DIR, `${proj.id}.html`);
     fs.writeFileSync(pagePath, buildProjectPage(proj));
+    generatedPages.push(`${proj.id}.html`);
     console.log(`  ✓ ${pagePath}`);
   }
-  const generatedPages = profile.projects.map(p => `${p.id}.html`);
   writeManifest(generatedPages);
   console.log(`  ✓ generated-pages.json (${generatedPages.length} pages tracked)`);
 
