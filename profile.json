@@ -214,7 +214,21 @@
         "image_caption": "Sample Network Map of Unifi Network"
       }
     },
+    {
+      "id": "EY-Audit",
+      "title": "EY Technology Risk Virtual Job Simulation on Forage",
+      "sponsor": "EY",
+      "category": "IT Infrastructure & Cloud",
+      "date": "August 2026",
+      "resume_rank": 4,
 
+      "resume": {
+        "bullets": [
+          "Completed a virtual job simulation involving understanding of typical IT risks and processes for EY’s Tech Risk team.",
+          "Engaged in practical tasks to improve my relationship building skills, teaming and productivity."
+        ]
+      }
+    },
     {
       "id": "ai-vision",
       "title": "AI-Powered Vision Assistance Prototype",
