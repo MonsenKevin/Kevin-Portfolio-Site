@@ -220,7 +220,7 @@
       "sponsor": "EY",
       "category": "IT Infrastructure & Cloud",
       "date": "August 2026",
-      "resume_rank": 4,
+      "resume_rank": 5,
 
       "resume": {
         "bullets": [
@@ -235,7 +235,7 @@
       "sponsor": "Class Project",
       "category": "Hardware & Embedded Systems",
       "date": "August–November 2025",
-      "resume_rank": 5,
+      "resume_rank": null,
 
       "resume": {
         "bullets": [
