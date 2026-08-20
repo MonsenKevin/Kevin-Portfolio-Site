@@ -21,7 +21,7 @@
     "location_home": "Los Altos, CA"
   },
 
-  "summary": "Cybersecurity-focused Computer Science student with experience in incident response forensics, IT controls documentation, and change management seeking an IT and networking related internship.",
+  "summary": "Cybersecurity-focused computer science student with experience in incident response, digital forensics, IT controls documentation, and change management, seeking an IT and networking internship.",
 
   "education": [
     {
@@ -45,31 +45,31 @@
   ],
 
   "technical_skills": [
-    { "name": "Elastic (SIEM)",       "category": "Cybersecurity & SIEM" },
-    { "name": "Velociraptor",          "category": "Cybersecurity & SIEM" },
-    { "name": "Azure Data Explorer",   "category": "Cybersecurity & SIEM" },
-    { "name": "Cloudflare",            "category": "Cybersecurity & SIEM" },
-    { "name": "VLANs",                 "category": "Cybersecurity & SIEM" },
-    { "name": "C",                     "category": "Programming & Scripting" },
-    { "name": "C++",                   "category": "Programming & Scripting" },
-    { "name": "Java",                  "category": "Programming & Scripting" },
-    { "name": "Go",                    "category": "Programming & Scripting" },
-    { "name": "Bash",                  "category": "Programming & Scripting" },
-    { "name": "JavaScript",            "category": "Programming & Scripting" },
-    { "name": "PowerShell",            "category": "Programming & Scripting" },
-    { "name": "Python",                "category": "Programming & Scripting" },
-    { "name": "TypeScript",            "category": "Programming & Scripting" },
-    { "name": "Google Workspace",      "category": "IT Systems & Platforms" },
-    { "name": "Unifi / Ubiquiti",      "category": "IT Systems & Platforms" },
-    { "name": "Blynk IoT",            "category": "IT Systems & Platforms" },
-    { "name": "Windows",               "category": "IT Systems & Platforms" },
-    { "name": "macOS",                 "category": "IT Systems & Platforms" },
-    { "name": "Linux",                 "category": "IT Systems & Platforms" },
-    { "name": "Jira",                  "category": "IT Systems & Platforms" },
-    { "name": "Raspberry Pi",          "category": "IT Systems & Platforms" },
-    { "name": "ESP32",                 "category": "IT Systems & Platforms" },
-    { "name": "Tailscale",             "category": "IT Systems & Platforms" },
-    { "name": "Parsec",                "category": "IT Systems & Platforms" }
+    { "name": "Elastic (SIEM)", "category": "Cybersecurity & SIEM" },
+    { "name": "Velociraptor", "category": "Cybersecurity & SIEM" },
+    { "name": "Azure Data Explorer", "category": "Cybersecurity & SIEM" },
+    { "name": "Cloudflare", "category": "Cybersecurity & SIEM" },
+    { "name": "VLANs", "category": "Cybersecurity & SIEM" },
+    { "name": "C", "category": "Programming & Scripting" },
+    { "name": "C++", "category": "Programming & Scripting" },
+    { "name": "Java", "category": "Programming & Scripting" },
+    { "name": "Go", "category": "Programming & Scripting" },
+    { "name": "Bash", "category": "Programming & Scripting" },
+    { "name": "JavaScript", "category": "Programming & Scripting" },
+    { "name": "PowerShell", "category": "Programming & Scripting" },
+    { "name": "Python", "category": "Programming & Scripting" },
+    { "name": "TypeScript", "category": "Programming & Scripting" },
+    { "name": "Google Workspace", "category": "IT Systems & Platforms" },
+    { "name": "UniFi / Ubiquiti", "category": "IT Systems & Platforms" },
+    { "name": "Blynk IoT", "category": "IT Systems & Platforms" },
+    { "name": "Windows", "category": "IT Systems & Platforms" },
+    { "name": "macOS", "category": "IT Systems & Platforms" },
+    { "name": "Linux", "category": "IT Systems & Platforms" },
+    { "name": "Jira", "category": "IT Systems & Platforms" },
+    { "name": "Raspberry Pi", "category": "IT Systems & Platforms" },
+    { "name": "ESP32", "category": "IT Systems & Platforms" },
+    { "name": "Tailscale", "category": "IT Systems & Platforms" },
+    { "name": "Parsec", "category": "IT Systems & Platforms" }
   ],
 
   "awards": [
@@ -103,8 +103,8 @@
       "end_date": "August 2026",
       "bullets": [
         "Supervised and trained <strong>28 lifeguards</strong>, enforcing regulatory safety protocols, compliance standards, and emergency response procedures.",
-        "Maintained chemical balance and filtration systems for a <strong>300+ patron</strong> facility requiring daily compliance logging, operational checks, and communication with stakeholders.",
-        "Led two trainings for swim instructors and lifeguards to ensure compliance and review skills and expectations."
+        "Maintained chemical balance and filtration systems for a <strong>300+ patron</strong> facility, including daily compliance logging, operational checks, and stakeholder communication.",
+        "Led two trainings for swim instructors and lifeguards to ensure compliance and reinforce skills and expectations."
       ]
     }
   ],
@@ -122,16 +122,16 @@
       "resume": {
         "bullets": [
           "Conducted post-breach forensic analysis in a simulated SOC environment using <strong>Elastic SIEM</strong>, <strong>Velociraptor</strong>, <strong>Malcom</strong>, and <strong>Microsoft Azure Data Explorer</strong> to identify indicators of compromise, trace attacker activity, and document evidence for structured findings.",
-          "Completed a CTF-style incident response exercise combining log analysis, anomaly detection, control gap identification, and structured incident documentation following audit-quality methodology."
+          "Completed a CTF-style incident response exercise combining log analysis, anomaly detection, control gap identification, and structured incident documentation using audit-quality methodology."
         ]
       },
 
       "website": {
         "problem": "Simulated post-breach environment requiring forensic investigation of attacker activity across a compromised SOC network.",
-        "approach": "Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.",
-        "outcome": "Completed CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control gap recommendations.",
+        "approach": "Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented the investigation with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.",
+        "outcome": "Completed a CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control-gap recommendations.",
         "relevance": "SIEM operations, threat hunting, log analysis, KQL, incident documentation, forensics",
-        "essay": "Participated in Tracer FIRE, a hands-on cybersecurity incident response training program run by Sandia National Laboratories. The exercise simulated a real-world post-breach environment, placing participants in a SOC analyst role tasked with reconstructing attacker activity from raw log data. \n\nThe primary investigation tool was Azure Data Explorer (ADX), used to write KQL queries against large datasets of event logs, network telemetry, and endpoint activity. Elastic SIEM served as the correlation platform, surfacing alerts and supporting timeline reconstruction across distributed log sources. Wireshark was used to inspect packet captures and validate network-level findings. \n\nThe exercise was structured as a CTF — each finding unlocked further investigation paths. Work included identifying indicators of compromise, tracing lateral movement, detecting persistence mechanisms, and producing structured incident documentation matching the format used in professional SOC environments. <br><br>",
+        "essay": "Participated in Tracer FIRE, a hands-on cybersecurity incident response training program run by Sandia National Laboratories. The exercise simulated a real-world post-breach environment and placed participants in a SOC analyst role tasked with reconstructing attacker activity from raw log data.\n\nThe primary investigation tool was Azure Data Explorer (ADX), which I used to write KQL queries against large datasets of event logs, network telemetry, and endpoint activity. Elastic SIEM served as the correlation platform, surfacing alerts and supporting timeline reconstruction across distributed log sources. Wireshark was used to inspect packet captures and validate network-level findings.\n\nThe exercise was structured as a CTF, with each finding unlocking further investigation paths. My work included identifying indicators of compromise, tracing lateral movement, detecting persistence mechanisms, and producing structured incident documentation that matched professional SOC practices. <br><br>",
         "image_path": "./images/dash.png",
         "image_caption": "./images/tracer.jpeg",
         "page_url": "kevinmonsen.com/tracer.html"
@@ -148,7 +148,7 @@
 
       "resume": {
         "bullets": [
-          "Engineered an <strong>ESP32</strong> with <strong>C++</strong> and <strong>Blynk IoT</strong> cloud platform to enable remote start, restart, and shutdown of a PC from anywhere in the world.",
+          "Engineered an <strong>ESP32</strong> with <strong>C++</strong> and the <strong>Blynk IoT</strong> cloud platform to enable remote start, restart, and shutdown of a PC from anywhere in the world.",
           "Integrated <strong>Tailscale</strong> and <strong>Parsec</strong> for high-speed remote access despite network restrictions."
         ]
       },
@@ -156,9 +156,9 @@
       "website": {
         "problem": "Needed a reliable way to remotely power-cycle a home PC from out of state without expensive KVM-over-IP hardware.",
         "approach": "Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.",
-        "outcome": "Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.",
+        "outcome": "Full remote power management is operational from the Bay Area while attending school in Tempe — cold boots, hard resets, and graceful shutdowns are all accessible via phone.",
         "relevance": "Embedded systems, C++, IoT platforms, remote access, network security",
-        "essay": "I originally started this project simply to be able to turn my computer on and off from my phone but it quickly expanded use cases. Wrote a full write up on LinkedIn",
+        "essay": "I originally started this project simply to be able to turn my computer on and off from my phone, but it quickly expanded into additional use cases. I wrote a full write-up on LinkedIn.",
         "image_path": "./images/ESP32.jpeg",
         "image_caption": "The ESP32 that controls the power switch of my PC",
         "cta": { "label": "View Article", "url": "https://www.linkedin.com/pulse/engineering-power-solution-esp32-kevin-monsen-efcpc/" }
@@ -175,17 +175,17 @@
 
       "resume": {
         "bullets": [
-          "Managed a zero-downtime change management migration of <strong>50+ users</strong> from a legacy email platform to <strong>Google Workspace</strong>.",
+          "Managed a zero-downtime change-management migration of <strong>50+ users</strong> from a legacy email platform to <strong>Google Workspace</strong>.",
           "Developed process documentation, administered end-user support, and validated access provisioning, eliminating <strong>$200</strong> in annual email fees."
         ]
       },
 
       "website": {
-        "problem": "Scout organization running a legacy email platform that was unreliable, costly, and not manageable by non-technical volunteers.",
-        "approach": "Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.",
-        "outcome": "50+ users migrated successfully with no service interruption. Eliminated $200/year in fees and left the organization with a maintainable, documented system.",
+        "problem": "A Scout organization was running on a legacy email platform that was unreliable, costly, and difficult to manage for non-technical volunteers.",
+        "approach": "Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth-protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.",
+        "outcome": "50+ users were migrated successfully with no service interruption. The organization eliminated $200 in annual fees and gained a maintainable, documented system.",
         "relevance": "Change management, Google Workspace, DNS, IT documentation, stakeholder communication",
-        "essay": "The Order of the Arrow lodge that I was a member of was moving off Network Solutions to achieve better performance for the WordPress site I made. Doing so would make us lose our email solution unless we wanted to pay a per mailbox subscription cost. I thoroughly evaluated all of the different solutions and landed on Google Workspace. Because we were a non-profit we qualified for free Google Workspace accounts that would let us reduce our total email cost to zero. \n \n I worked with an advisor to navigate the non-profit status approval, migrate email data, and set up mailboxes. \n\n Because of youth protection requirements all emails that contain a person under 18 must have at least 2 adults on the communication chain. To accomplish this we set up the email aliases to forward to personal email addresses of the youth recipient and adult advisors, enabling automatic compliance"
+        "essay": "The Order of the Arrow lodge I was a member of was moving away from Network Solutions to improve performance for the WordPress site I had built. Doing so would have meant losing our email solution unless we wanted to pay a per-mailbox subscription cost. I evaluated several options and landed on Google Workspace. Because we were a nonprofit, we qualified for free Google Workspace accounts, which allowed us to reduce our total email cost to zero.\n\nI worked with an advisor to navigate nonprofit status approval, migrate email data, and set up mailboxes.\n\nBecause of youth protection requirements, all emails containing a person under 18 must include at least two adults in the communication chain. To accomplish this, we set up email aliases to forward to the youth recipient's personal email address and the adult advisors' addresses, enabling automatic compliance."
       }
     },
 
@@ -206,10 +206,10 @@
 
       "website": {
         "problem": "Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.",
-        "approach": "Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.",
-        "outcome": "Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.",
+        "approach": "Diagnosed the root cause (ISP modem bridge-mode misconfiguration and channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.",
+        "outcome": "Network outages were reduced from approximately 50 per year to 1. Clean segmentation improved security posture and created a documented baseline for future changes.",
         "relevance": "Network engineering, Ubiquiti/UniFi, VLANs, documentation, troubleshooting",
-        "essay": "Diagnosed recurring wireless network failures caused by a degrading all-in-one consumer router. After evaluating replacement options, recommended migrating to a Ubiquiti-based network to improve reliability, visibility, and configuration control. \n \n Assisted with the installation and configuration of Ubiquiti networking hardware, including access points and switching infrastructure. Following deployment, created a detailed network diagram documenting device connections and switch port assignments to improve long-term maintainability and troubleshooting. \n \n Since the migration, the network has operated reliably with no reported connectivity issues.",
+        "essay": "Diagnosed recurring wireless network failures caused by a degrading all-in-one consumer router. After evaluating replacement options, I recommended migrating to a Ubiquiti-based network to improve reliability, visibility, and configuration control.\n\nI assisted with the installation and configuration of Ubiquiti networking hardware, including access points and switching infrastructure. After deployment, I created a detailed network diagram documenting device connections and switch port assignments to improve long-term maintainability and troubleshooting.\n\nSince the migration, the network has operated reliably with no reported connectivity issues.",
         "image_path": "./images/map.png",
         "image_caption": "Sample Network Map of Unifi Network"
       }
@@ -224,8 +224,8 @@
 
       "resume": {
         "bullets": [
-          "Completed a virtual job simulation involving understanding of typical IT risks and processes for EY’s Tech Risk team.",
-          "Engaged in practical tasks to improve relationship building skills, teaming and productivity, and audit assesments."
+          "Completed a virtual job simulation covering common IT risks and processes within EY's Tech Risk team.",
+          "Engaged in practical tasks to improve relationship-building, teamwork, productivity, and audit assessment skills."
         ]
       }
     },
@@ -239,17 +239,17 @@
 
       "resume": {
         "bullets": [
-          "Prototyped a real-time safety device using <strong>Raspberry Pi</strong>, sensors, camera, and audio alerts for visually impaired users with <strong>25 millisecond</strong> response time and <strong>99% accuracy</strong>.",
-          "Leveraged AI-assisted development (<strong>Gemini</strong>, <strong>GitHub Copilot</strong>) to accelerate prototyping and identify and resolve <strong>7 critical bugs</strong> while maintaining clean, readable code."
+          "Prototyped a real-time safety device using <strong>Raspberry Pi</strong>, sensors, a camera, and audio alerts for visually impaired users, achieving <strong>25 millisecond</strong> response time and <strong>99% accuracy</strong>.",
+          "Leveraged AI-assisted development with <strong>Gemini</strong> and <strong>GitHub Copilot</strong> to accelerate prototyping and identify and resolve <strong>7 critical bugs</strong> while maintaining clean, readable code."
         ]
       },
 
       "website": {
         "problem": "Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.",
-        "approach": "Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.",
+        "approach": "Built a wearable prototype using <strong>Raspberry Pi</strong> with a camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout the project to maintain code quality during a tight academic sprint.",
         "outcome": "Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.",
-        "relevance": "Embedded systems, Python, Gemini API, AI-assisted Development",
-        "essay": "For our FSE 100 project at Arizona State University my team was tasked to create a solution for a group of people. After hearing the interviews that we were provided we realized that people with vision impairments have a hard time with head-high objects and wanted to make a solution to help warn them before they hit an obstacle \n \n Our solution involved a combination of a webcam and ultrasonic sensor. The ultrasonic sensor warned of an imminent danger with a loud buzzer sound while the webcam was connected to an OpenAI API which detected if there were any obstacles farther out which then warned the user with a vibration. The whole thing had a button to turn it off should the user be sitting on public transit where there would be many close obstacles. We used async Python functions to allow the ultrasonic sensor to continue to work while the webcam was waiting for a response  \n\n The compute was done on a Raspberry Pi 4B and the main hardware was stored in a fanny pack. The ultrasonic sensor and webcam were housed on top of a baseball cap with the wires carefully managed. \n\n The end result impressed the professor enough for him to keep our design around for an example for next year",
+        "relevance": "Embedded systems, Python, Gemini API, AI-assisted development",
+        "essay": "For our FSE 100 project at Arizona State University, my team was tasked with creating a solution for a specific group of people. After hearing the interviews we were provided, we realized that people with vision impairments struggle with head-high objects and wanted to create a solution to help warn them before they hit an obstacle.\n\nOur solution involved a combination of a webcam and ultrasonic sensor. The ultrasonic sensor warned of imminent danger with a loud buzzer, while the webcam was connected to an OpenAI API that detected obstacles farther away and then warned the user with vibration. The device included a button to turn it off when the user was sitting on public transit and there would be many close obstacles. We used async Python functions to allow the ultrasonic sensor to continue working while the webcam waited for a response.\n\nThe compute was done on a Raspberry Pi 4B, and the main hardware was stored in a fanny pack. The ultrasonic sensor and webcam were housed on top of a baseball cap, with the wires carefully managed.\n\nThe end result impressed the professor enough that he kept our design around as an example for next year.",
         "image_path": "./images/Engineer.png",
         "image_caption": "The final sensor array",
         "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/AI-Vision-Assistance" }
@@ -266,17 +266,17 @@
 
       "resume": {
         "bullets": [
-          "Diagnosed GPU overheating via benchmarks and thermal monitoring, disassembled unit, and reapplied thermal interface materials to restore stable operating temperatures.",
-          "Validated performance recovery post-maintenance, establishing a preventive maintenance baseline for the system."
+          "Diagnosed GPU overheating through benchmarks and thermal monitoring, disassembled the unit, and reapplied thermal interface materials to restore stable operating temperatures.",
+          "Validated performance recovery after maintenance and established a preventive maintenance baseline for the system."
         ]
       },
 
       "website": {
-        "problem": "High-end GPU running at unsafe temperatures under load, causing thermal throttling and system instability.",
-        "approach": "Ran stress benchmarks and monitored thermals to confirm GPU overheating as root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.",
-        "outcome": "Temperatures reduced to safe operating range. System stable under sustained load with documented before/after thermal profiles.",
+        "problem": "A high-end GPU was running at unsafe temperatures under load, causing thermal throttling and system instability.",
+        "approach": "Ran stress benchmarks and monitored thermals to confirm GPU overheating as the root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.",
+        "outcome": "Temperatures were reduced to a safe operating range, and the system remained stable under sustained load with documented before-and-after thermal profiles.",
         "relevance": "Hardware diagnostics, reliability engineering, preventive maintenance, benchmarking",
-        "essay": "Investigated repeated system crashes occurring during moderate gaming workloads by running performance and temperature tests, which identified inadequate GPU thermal performance as the root cause. \n \n Disassembled the graphics card, removed degraded thermal compound, and applied PTM7950 to restore effective heat transfer between the GPU die and cooling solution. \n\n The intervention significantly reduced operating temperatures and resulted in a more stable and reliable system under sustained load.",
+        "essay": "Investigated repeated system crashes during moderate gaming workloads by running performance and temperature tests, which identified inadequate GPU thermal performance as the root cause.\n\nI disassembled the graphics card, removed degraded thermal compound, and applied PTM7950 to restore effective heat transfer between the GPU die and the cooling solution.\n\nThe intervention significantly reduced operating temperatures and resulted in a more stable and reliable system under sustained load.",
         "image_path": "./images/repaste.jpeg",
         "image_caption": "GPU Die"
       }
@@ -299,10 +299,10 @@
 
       "website": {
         "problem": "Needed a centralized, professional platform to document and present technical projects to recruiters and employers.",
-        "approach": "Designed and built kevinmonsen.com from scratch — custom <strong>HTML/CSS/JS</strong>, teal accent design system, deployed through <strong>Cloudflare</strong> with CDN and DNS configuration. Iterated on layout, copy, and project pages based on career center feedback.",
+        "approach": "Designed and built kevinmonsen.com from scratch using custom <strong>HTML/CSS/JS</strong>, a teal accent design system, and <strong>Cloudflare</strong> for CDN and DNS configuration. Iterated on layout, copy, and project pages based on career-center feedback.",
         "outcome": "Live production site serving as the primary professional presence, linked across LinkedIn, resume, Handshake, and CareerLink.",
         "relevance": "Web development, HTML/CSS/JS, deployment, DNS, version control, design systems",
-        "essay": "Designed and developed a custom portfolio website using HTML, CSS, and JavaScript to showcase engineering projects, technical skills, and experience. The site was built from scratch with a focus on clarity, usability, and maintainability. \n \n Implemented a bold typographic layout on the homepage to immediately engage visitors, while maintaining a restrained color palette to communicate professionalism and technical competence. Design decisions were guided by readability and effective information hierarchy. \n \n Deployed the site using GitHub Pages as a cost-effective and reliable hosting solution for static web applications. \n \n Later upgraded with GitHub Actions to auto-generate project pages based on information in a JSON file",
+        "essay": "Designed and developed a custom portfolio website using HTML, CSS, and JavaScript to showcase engineering projects, technical skills, and experience. The site was built from scratch with a focus on clarity, usability, and maintainability.\n\nI implemented a bold typographic layout on the homepage to immediately engage visitors while maintaining a restrained color palette to communicate professionalism and technical competence. Design decisions were guided by readability and information hierarchy.\n\nThe site was deployed using GitHub Pages as a cost-effective and reliable hosting solution for static web applications.\n\nIt was later upgraded with GitHub Actions to auto-generate project pages from a JSON file.",
         "image_path": "./images/portfolio.png",
         "image_caption": "Home Page of Portfolio Site"
       }
@@ -318,17 +318,17 @@
 
       "resume": {
         "bullets": [
-          "Built and launched a production <strong>WordPress</strong> site for a scout organization, prioritizing maintainability by non-technical future leaders.",
+          "Built and launched a production <strong>WordPress</strong> site for a scout organization, prioritizing maintainability for non-technical future leaders.",
           "Produced plugin and workflow documentation and trained an adult leader for long-term continuity and knowledge transfer."
         ]
       },
 
       "website": {
-        "problem": "Scout lodge needed a reliable, publicly accessible website manageable by volunteers with no web development background.",
-        "approach": "Chose <strong>WordPress</strong> over a custom build deliberately — prioritizing long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.",
-        "outcome": "Live site at ohlone63.org serving active lodge membership. Handed off with full documentation and a trained maintainer.",
+        "problem": "A Scout lodge needed a reliable, publicly accessible website that could be managed by volunteers with no web development background.",
+        "approach": "Chose <strong>WordPress</strong> over a custom build deliberately to prioritize long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.",
+        "outcome": "A live site at ohlone63.org now serves the active lodge membership. It was handed off with full documentation and a trained maintainer.",
         "relevance": "Production systems, WordPress, user-focused design, documentation, knowledge transfer",
-        "essay": "As Secretary for Ohlone Lodge, led a full redesign and migration of the organization’s website to improve usability, maintainability, and performance. Within one week, migrated all existing content from the legacy site to a new WordPress-based platform while preserving accuracy and continuity. \n\n WordPress was selected intentionally to support non-technical future site administrators. While a custom HTML/CSS/JavaScript solution was possible, prioritizing long-term usability and ease of content management enabled future secretaries to update the site without technical barriers. This user-focused approach informed key architectural decisions throughout the project. \n\n Following the redesign, investigated performance degradation and identified issues caused by residual plugin files and insufficient hosting resources. Cleaned up unused assets and evaluated alternative hosting providers to improve site performance and cost efficiency. After selecting WP Engine as a suitable hosting solution, collaborated with other members of the site team to plan and execute the hosting migration. \n\n The final result is a responsive, performant, and easy-to-maintain website designed to support the organization’s needs for years to come.",
+        "essay": "As Secretary for Ohlone Lodge, I led a full redesign and migration of the organization's website to improve usability, maintainability, and performance. Within one week, I migrated all existing content from the legacy site to a new WordPress-based platform while preserving accuracy and continuity.\n\nWordPress was selected intentionally to support non-technical future site administrators. While a custom HTML/CSS/JavaScript solution was possible, prioritizing long-term usability and ease of content management enabled future secretaries to update the site without technical barriers. This user-focused approach informed key architectural decisions throughout the project.\n\nFollowing the redesign, I investigated performance degradation and identified issues caused by residual plugin files and insufficient hosting resources. I cleaned up unused assets and evaluated alternative hosting providers to improve site performance and cost efficiency. After selecting WP Engine as a suitable hosting solution, I collaborated with other site team members to plan and execute the hosting migration.\n\nThe final result is a responsive, performant, and easy-to-maintain website designed to support the organization’s needs for years to come.",
         "image_path": "./images/ohlone.png",
         "image_caption": "Home Page of Ohlone Lodge",
         "cta": { "label": "Visit Site", "url": "https://www.ohlone63.org" }
@@ -346,16 +346,16 @@
       "resume": {
         "bullets": [
           "Designed and deployed a professional services website for a technology management firm concept, emphasizing usability and long-term maintainability.",
-          "Applied design system principles to produce a production-ready site meeting defined usability and maintainability criteria."
+          "Applied design system principles to produce a production-ready site that met defined usability and maintainability criteria."
         ]
       },
 
       "website": {
         "problem": "Needed a design exercise to explore what a professional MSP firm's online presence should look like — usable, credible, and maintainable.",
-        "approach": "Designed and built a full professional services site with service pages, about section, and contact flow. Focused on clarity and long-term maintainability over visual complexity.",
+        "approach": "Designed and built a full professional services site with service pages, an about section, and a contact flow. Focused on clarity and long-term maintainability over visual complexity.",
         "outcome": "Production-ready site deployed as a portfolio and design reference for future MSP work.",
         "relevance": "Usability, professional design, maintainability, web development",
-        "essay": "Designed and developed a professional marketing website for Scottsdale Technology Management using HTML, CSS, and JavaScript. The project focused on creating a clear, engaging user experience while maintaining a simple, maintainable technical stack. \n \n The site features a looping video landing section to immediately engage visitors and establish brand presence. Service offerings are organized into three clearly defined tiers, using consistent branding and color hierarchy to improve readability and guide prospective clients through available options.",
+        "essay": "Designed and developed a professional marketing website for Scottsdale Technology Management using HTML, CSS, and JavaScript. The project focused on creating a clear, engaging user experience while maintaining a simple, maintainable technical stack.\n\nThe site features a looping video landing section to immediately engage visitors and establish brand presence. Service offerings are organized into three clearly defined tiers, using consistent branding and color hierarchy to improve readability and guide prospective clients through available options.",
         "image_path": "./images/stm.png",
         "image_caption": "Home Page of Scottsdale Technology Management",
         "cta": { "label": "Visit Site", "url": "https://monsenkevin.github.io/Scottsdale-Technology-Management" }
@@ -372,20 +372,20 @@
 
       "resume": {
         "bullets": [
-          "Led a 3-day hackathon sprint building an AI-powered essay feedback tool; designed UI/UX in <strong>Google Stitch</strong> and implemented backend in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API.",
-          "Presented working prototype to a panel of evaluators; used AI-assisted development throughout to maintain code quality under time pressure."
+          "Led a 3-day hackathon sprint building an AI-powered essay feedback tool; designed the UI/UX in <strong>Google Stitch</strong> and implemented the backend in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API.",
+          "Presented a working prototype to a panel of evaluators and used AI-assisted development throughout to maintain code quality under time pressure."
         ]
       },
 
       "website": {
         "problem": "Students lack access to immediate, structured feedback on essay quality between drafts.",
         "approach": "Led a 3-person team through a hackathon sprint. Designed the UI in <strong>Google Stitch</strong>, implemented structured rubric-based feedback logic in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API, and used <strong>Kiro</strong> as the primary AI development tool throughout.",
-        "outcome": "Working prototype delivered and presented to evaluators within the hackathon window.",
+        "outcome": "A working prototype was delivered and presented to evaluators within the hackathon window.",
         "relevance": "Full-stack development, AI integration, TypeScript, rapid prototyping, project leadership",
-        "essay": "As a college student I had always found that the hardest part of essay writing was feedback. I could read my work over and over again but still not be satisfied with the writing but be at a loss on what to do. I also knew that many of my peers started their essays late at night, after the tutoring center was closed, therefore it was even more imperative for them to have access to a way to get feedback on their writing 24/7. \n\n Many students have in recent years turned to artificial intelligence models to give feedback on their work but if done improperly can lead to the model writing the essay for them. This not only breaks academic integrity but hinders their growth as a writer. \n\n Enter Midnight Tutor, my team's solution to this challenge. Students upload their essay, prompt, and rubric and get detailed feedback on where they can improve. It also has a brainstorming feature to help get the writing juices flowing",
+        "essay": "As a college student, I had always found that the hardest part of essay writing was feedback. I could read my work over and over again and still not be satisfied with the writing, but be at a loss for what to do next. I also knew that many of my peers started their essays late at night, after the tutoring center had closed, so it was even more important for them to have a way to receive feedback 24/7.\n\nMany students have turned to artificial intelligence models for feedback on their work, but if used improperly, these models can end up writing the essay for them. This not only breaks academic integrity but also hinders their growth as writers.\n\nEnter Midnight Tutor, my team's solution to this challenge. Students upload their essay, prompt, and rubric and receive detailed feedback on where they can improve. It also includes a brainstorming feature to help get the writing juices flowing.",
         "image_path": "./images/ai-tutor.png",
         "image_caption": "Homepage of Midnight Tutor",
-        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/AI-Writing-Tutor"}
+        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/AI-Writing-Tutor" }
       }
     },
 
@@ -405,14 +405,14 @@
       },
 
       "website": {
-        "problem": "Employees feel lost once you finish onboarding them and have no idea who to contact if they need more support or who last worked on the project they were assigned to",
-        "approach": "Built Afloat, an ever-boarding tool that lets employees ask questions, lets managers check in, and give easy access to the company wide knowledge base with natural language queries",
-        "outcome": "Employees feel more supported and are less stuck as they adapt to company culture and knowledge. Managers get greater insights on how their new employees are feeling and can support them better",
+        "problem": "Employees often feel lost after onboarding ends and have no clear place to ask questions or determine who last worked on the project they were assigned to.",
+        "approach": "Built Afloat, an onboarding tool that helps employees ask questions, lets managers check in, and provides easy access to the company-wide knowledge base through natural-language queries.",
+        "outcome": "Employees feel more supported and are less stuck as they adapt to company culture and knowledge, while managers gain greater insight into how new employees are feeling and can support them more effectively.",
         "relevance": "Full-stack development, Chrome extensions, API integration, rapid prototyping, team collaboration",
-        "essay": "For this hackathon we were tasked with solving an economic problem using Kiro AI, Amazon's coding assistant. My team decided to tackle the cost of onboarding that face companies every year. The average direct cost to onboard a new employee is $4,100, according to benchmark data from the Society for Human Resource Management (SHRM). When including indirect hidden expenses like manager time and lost productivity, the total investment often reaches 20% to 30% of the employee’s first-year salary. Therefore it is critical that the turn over rate remain low, which can be accomplished by making the employee feel welcome and supported. \n \n The issue we addressed in our project is a new employee feeling stuck because they have no idea who to talk to in order to get the background on the project they are working on or how to find anything in the company knowledge base. By giving them an AI assistant that can connect them with people we enable deeper collaboration and knowledge sharing. It also includes a survey function so the manager can check in with each team member to make sure they are doing well",
+        "essay": "For this hackathon, we were tasked with solving an economic problem using Kiro AI, Amazon's coding assistant. My team decided to tackle the cost of onboarding that companies face every year. The average direct cost to onboard a new employee is $4,100, according to benchmark data from the Society for Human Resource Management (SHRM). When indirect hidden expenses such as manager time and lost productivity are included, the total investment often reaches 20% to 30% of the employee's first-year salary. Therefore, it is critical that turnover remain low, which can be accomplished by making the employee feel welcome and supported.\n\nThe issue we addressed in our project was a new employee feeling stuck because they had no idea who to talk to for project background or how to find information in the company knowledge base. By giving them an AI assistant that can connect them with people, we enable deeper collaboration and knowledge sharing. It also includes a survey function so managers can check in with each team member to ensure they are doing well.",
         "image_path": "./images/afloat.png",
         "image_caption": "Manager view of Afloat",
-        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/afloat"}
+        "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/afloat" }
       }
     }
   ]
