@@ -450,8 +450,8 @@
                     <b>Project Title</b>: Tracer FIRE Cybersecurity Incident Response Training<br>
                     <b>Sponsor</b>: Sandia National Laboratories<br>
                     <b>Problem</b>: Simulated post-breach environment requiring forensic investigation of attacker activity across a compromised SOC network.<br>
-                    <b>Approach</b>: Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.<br>
-                    <b>Outcome</b>: Completed CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control gap recommendations.<br>
+                    <b>Approach</b>: Used <strong>Elastic SIEM</strong> for log correlation and <strong>Azure Data Explorer (ADX)</strong> for structured KQL-based queries to identify indicators of compromise and trace lateral movement. Supplemented the investigation with <strong>Velociraptor</strong> for endpoint forensics and <strong>Malcom</strong> for network graph analysis.<br>
+                    <b>Outcome</b>: Completed a CTF-style incident response exercise with structured documentation of findings, attacker timelines, and control-gap recommendations.<br>
                     <a href="./tracer-fire.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -473,23 +473,23 @@
                     <b>Project Title</b>: Remote PC Power Management using IoT Platform<br>
                     <b>Problem</b>: Needed a reliable way to remotely power-cycle a home PC from out of state without expensive KVM-over-IP hardware.<br>
                     <b>Approach</b>: Programmed an <strong>ESP32</strong> microcontroller in <strong>C++</strong> to trigger PC power and reset lines via relay, controlled through the <strong>Blynk IoT</strong> cloud dashboard. Layered <strong>Tailscale</strong> for secure remote network access and <strong>Parsec</strong> for low-latency remote desktop once the machine was online.<br>
-                    <b>Outcome</b>: Full remote power management operational from the Bay Area while at school in Tempe — cold boots, hard resets, and graceful shutdowns all accessible via phone.<br>
+                    <b>Outcome</b>: Full remote power management is operational from the Bay Area while attending school in Tempe — cold boots, hard resets, and graceful shutdowns are all accessible via phone.<br>
                     <a href="./iot-remote-pc.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
                   <li>
                     <b>Project Title</b>: AI-Powered Vision Assistance Prototype<br>
                     <b>Problem</b>: Visually impaired users lack affordable, real-time assistive devices that can identify hazards and provide immediate audio feedback.<br>
-                    <b>Approach</b>: Built a wearable prototype using <strong>Raspberry Pi</strong> with camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout to maintain code quality during a tight academic sprint.<br>
+                    <b>Approach</b>: Built a wearable prototype using <strong>Raspberry Pi</strong> with a camera module, ultrasonic sensors, and a speaker. Integrated the <strong>Gemini API</strong> for vision inference and wrote processing logic in <strong>Python</strong>. Used <strong>GitHub Copilot</strong> throughout the project to maintain code quality during a tight academic sprint.<br>
                     <b>Outcome</b>: Functional prototype achieving 25ms response time and 99% accuracy in controlled testing. Presented to course evaluators as a complete hardware-software system.<br>
                     <a href="./ai-vision.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
                   <li>
                     <b>Project Title</b>: GPU Thermal Optimization<br>
-                    <b>Problem</b>: High-end GPU running at unsafe temperatures under load, causing thermal throttling and system instability.<br>
-                    <b>Approach</b>: Ran stress benchmarks and monitored thermals to confirm GPU overheating as root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.<br>
-                    <b>Outcome</b>: Temperatures reduced to safe operating range. System stable under sustained load with documented before/after thermal profiles.<br>
+                    <b>Problem</b>: A high-end GPU was running at unsafe temperatures under load, causing thermal throttling and system instability.<br>
+                    <b>Approach</b>: Ran stress benchmarks and monitored thermals to confirm GPU overheating as the root cause. Disassembled the card, cleaned old thermal pads and paste, applied fresh <strong>Thermal Grizzly</strong> materials, and validated recovery with a repeat benchmark.<br>
+                    <b>Outcome</b>: Temperatures were reduced to a safe operating range, and the system remained stable under sustained load with documented before-and-after thermal profiles.<br>
                     <a href="./gpu-thermal.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -510,9 +510,9 @@
                   <li>
                     <b>Project Title</b>: Cloud Email and Workspace Migration<br>
                     <b>Sponsor</b>: Volunteer Project<br>
-                    <b>Problem</b>: Scout organization running a legacy email platform that was unreliable, costly, and not manageable by non-technical volunteers.<br>
-                    <b>Approach</b>: Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.<br>
-                    <b>Outcome</b>: 50+ users migrated successfully with no service interruption. Eliminated $200/year in fees and left the organization with a maintainable, documented system.<br>
+                    <b>Problem</b>: A Scout organization was running on a legacy email platform that was unreliable, costly, and difficult to manage for non-technical volunteers.<br>
+                    <b>Approach</b>: Planned and executed a staged migration to <strong>Google Workspace</strong> with zero downtime, including DNS cutover, mailbox migration, and youth-protection compliance validation. Produced runbooks and trained an adult leader for ongoing administration.<br>
+                    <b>Outcome</b>: 50+ users were migrated successfully with no service interruption. The organization eliminated $200 in annual fees and gained a maintainable, documented system.<br>
                     <a href="./workspace-migration.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -533,8 +533,8 @@
                   <li>
                     <b>Project Title</b>: Home Network Infrastructure Upgrade<br>
                     <b>Problem</b>: Persistent wireless failures and an unsegmented flat network in a busy household with 60+ devices.<br>
-                    <b>Approach</b>: Diagnosed root cause (ISP modem bridge mode misconfiguration + channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.<br>
-                    <b>Outcome</b>: Network outages reduced from ~50 per year to 1. Clean segmentation improved security posture and gave a documented baseline for future changes.<br>
+                    <b>Approach</b>: Diagnosed the root cause (ISP modem bridge-mode misconfiguration and channel congestion), then deployed a <strong>Ubiquiti UniFi</strong> stack with proper VLAN segmentation separating IoT, guest, and internal traffic. Documented topology, access control lists, and configuration baselines.<br>
+                    <b>Outcome</b>: Network outages were reduced from approximately 50 per year to 1. Clean segmentation improved security posture and created a documented baseline for future changes.<br>
                     <a href="./home-network.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -555,7 +555,7 @@
                   <li>
                     <b>Project Title</b>: Personal Portfolio Website<br>
                     <b>Problem</b>: Needed a centralized, professional platform to document and present technical projects to recruiters and employers.<br>
-                    <b>Approach</b>: Designed and built kevinmonsen.com from scratch — custom <strong>HTML/CSS/JS</strong>, teal accent design system, deployed through <strong>Cloudflare</strong> with CDN and DNS configuration. Iterated on layout, copy, and project pages based on career center feedback.<br>
+                    <b>Approach</b>: Designed and built kevinmonsen.com from scratch using custom <strong>HTML/CSS/JS</strong>, a teal accent design system, and <strong>Cloudflare</strong> for CDN and DNS configuration. Iterated on layout, copy, and project pages based on career-center feedback.<br>
                     <b>Outcome</b>: Live production site serving as the primary professional presence, linked across LinkedIn, resume, Handshake, and CareerLink.<br>
                     <a href="./portfolio-site.html" class="project-link">View project →</a>
                   <br><br>
@@ -563,9 +563,9 @@
                   <li>
                     <b>Project Title</b>: Lodge WordPress Site (Production)<br>
                     <b>Sponsor</b>: Volunteer Project — OA Ohlone Lodge 63<br>
-                    <b>Problem</b>: Scout lodge needed a reliable, publicly accessible website manageable by volunteers with no web development background.<br>
-                    <b>Approach</b>: Chose <strong>WordPress</strong> over a custom build deliberately — prioritizing long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.<br>
-                    <b>Outcome</b>: Live site at ohlone63.org serving active lodge membership. Handed off with full documentation and a trained maintainer.<br>
+                    <b>Problem</b>: A Scout lodge needed a reliable, publicly accessible website that could be managed by volunteers with no web development background.<br>
+                    <b>Approach</b>: Chose <strong>WordPress</strong> over a custom build deliberately to prioritize long-term maintainability over technical elegance. Configured plugins, established a documentation standard, and trained a non-technical adult leader as primary maintainer.<br>
+                    <b>Outcome</b>: A live site at ohlone63.org now serves the active lodge membership. It was handed off with full documentation and a trained maintainer.<br>
                     <a href="./lodge-wordpress.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
@@ -573,7 +573,7 @@
                     <b>Project Title</b>: Scottsdale Technology Management Website<br>
                     <b>Sponsor</b>: Design Exercise<br>
                     <b>Problem</b>: Needed a design exercise to explore what a professional MSP firm's online presence should look like — usable, credible, and maintainable.<br>
-                    <b>Approach</b>: Designed and built a full professional services site with service pages, about section, and contact flow. Focused on clarity and long-term maintainability over visual complexity.<br>
+                    <b>Approach</b>: Designed and built a full professional services site with service pages, an about section, and a contact flow. Focused on clarity and long-term maintainability over visual complexity.<br>
                     <b>Outcome</b>: Production-ready site deployed as a portfolio and design reference for future MSP work.<br>
                     <a href="./stm-site.html" class="project-link">View project →</a>
                   <br><br>
@@ -597,16 +597,16 @@
                     <b>Sponsor</b>: Hackathon Project<br>
                     <b>Problem</b>: Students lack access to immediate, structured feedback on essay quality between drafts.<br>
                     <b>Approach</b>: Led a 3-person team through a hackathon sprint. Designed the UI in <strong>Google Stitch</strong>, implemented structured rubric-based feedback logic in <strong>TypeScript</strong> using the <strong>Google AI Studio</strong> API, and used <strong>Kiro</strong> as the primary AI development tool throughout.<br>
-                    <b>Outcome</b>: Working prototype delivered and presented to evaluators within the hackathon window.<br>
+                    <b>Outcome</b>: A working prototype was delivered and presented to evaluators within the hackathon window.<br>
                     <a href="./ai-essay-tool.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
                   <li>
                     <b>Project Title</b>: Kiro Spark Hackathon — Chrome Extension<br>
                     <b>Sponsor</b>: Hackathon Project — Kiro Spark Challenge<br>
-                    <b>Problem</b>: Employees feel lost once you finish onboarding them and have no idea who to contact if they need more support or who last worked on the project they were assigned to<br>
-                    <b>Approach</b>: Built Afloat, an ever-boarding tool that lets employees ask questions, lets managers check in, and give easy access to the company wide knowledge base with natural language queries<br>
-                    <b>Outcome</b>: Employees feel more supported and are less stuck as they adapt to company culture and knowledge. Managers get greater insights on how their new employees are feeling and can support them better<br>
+                    <b>Problem</b>: Employees often feel lost after onboarding ends and have no clear place to ask questions or determine who last worked on the project they were assigned to.<br>
+                    <b>Approach</b>: Built Afloat, an onboarding tool that helps employees ask questions, lets managers check in, and provides easy access to the company-wide knowledge base through natural-language queries.<br>
+                    <b>Outcome</b>: Employees feel more supported and are less stuck as they adapt to company culture and knowledge, while managers gain greater insight into how new employees are feeling and can support them more effectively.<br>
                     <a href="./kiro-chrome-extension.html" class="project-link">View project →</a>
                   <br><br>
                   </li>
