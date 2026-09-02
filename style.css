@@ -222,6 +222,49 @@ nav.nav--scrolled .nav-resume:hover {
   margin: 12px auto 0;
 }
 
+/* Scroll chevron placed at bottom of hero with subtle float animation */
+.scroll-chev {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(18px, 3vh, 36px);
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: rgba(15, 23, 42, 0.9);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.08);
+  font-size: 18px;
+  z-index: 40;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  animation: chev-float 2.6s ease-in-out infinite;
+}
+
+.scroll-chev i {
+  display: block;
+  line-height: 1;
+  font-size: 18px;
+}
+
+.scroll-chev:hover {
+  transform: translateX(-50%) translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.12);
+}
+
+@keyframes chev-float {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-chev { animation: none; transition: none; }
+}
+
 /* Base */
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
