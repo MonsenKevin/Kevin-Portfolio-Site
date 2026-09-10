@@ -121,7 +121,7 @@
 
       "resume": {
         "bullets": [
-          "Conducted post-breach forensic analysis in a simulated SOC environment using <strong>Elastic SIEM</strong>, <strong>Velociraptor</strong>, <strong>Malcom</strong>, and <strong>Microsoft Azure Data Explorer</strong> to identify indicators of compromise, trace attacker activity, and document evidence for structured findings.",
+          "Performed threat intelligence and log analysis within a simulated Security Operations Center (SOC), utilizing Azure Data Explorer (ADX) and Elastic SIEM to reconstruct attacker paths and identify indicators of compromise (IOCs)",
           "Completed a CTF-style incident response exercise combining log analysis, anomaly detection, control gap identification, and structured incident documentation using audit-quality methodology."
         ]
       },
@@ -148,8 +148,8 @@
 
       "resume": {
         "bullets": [
-          "Engineered an <strong>ESP32</strong> with <strong>C++</strong> and the <strong>Blynk IoT</strong> cloud platform to enable remote start, restart, and shutdown of a PC from anywhere in the world.",
-          "Integrated <strong>Tailscale</strong> and <strong>Parsec</strong> for high-speed remote access despite network restrictions."
+          "Architected a secure remote hardware management system using an ESP32, implementing a multi-layered authentication framework <strong>(Blynk IoT, Parsec, and Tailscale VPN)</strong> to ensure secure, zero-trust access control.",
+          "Engineered the system to maintain encrypted, high-throughput remote management for hardware power states while securely bypassing restrictive network environments."
         ]
       },
 
@@ -175,8 +175,8 @@
 
       "resume": {
         "bullets": [
-          "Managed a zero-downtime change-management migration of <strong>50+ users</strong> from a legacy email platform to <strong>Google Workspace</strong>.",
-          "Developed process documentation, administered end-user support, and validated access provisioning, eliminating <strong>$200</strong> in annual email fees."
+          "Led a zero-downtime migration of <strong>50+</strong> users to Google Workspace, implementing <strong> automated internal communication controls </strong>to enforce organizational governance and youth protection policies.",
+          "Developed comprehensive process documentation and managed access provisioning to ensure continuous compliance with internal policy and reduce recurring annual software expenses."
         ]
       },
 
