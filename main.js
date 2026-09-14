@@ -71,39 +71,58 @@ window.addEventListener('resize', () => {
 updateActiveLink();
 
 // Accessible accordion: toggles panels, closes others, sets aria attributes
+// Used by the Leader / Engineer / Problem Solver sections.
 document.querySelectorAll('.panel-item').forEach(item => {
   const btn = item.querySelector('.q');
   const panel = item.querySelector('.panel');
+  if (!btn || !panel) return;
 
-  // helper to set open/close with smooth max-height
   function openPanel() {
-    // close other open panels (optional)
-    document.querySelectorAll('.panel.open').forEach(p=>{
-      if(p !== panel) {
+    document.querySelectorAll('.panel.open').forEach(p => {
+      if (p !== panel) {
         p.classList.remove('open');
         p.style.maxHeight = null;
-        p.previousElementSibling?.setAttribute('aria-expanded','false');
-        p.setAttribute('aria-hidden','true');
+        p.previousElementSibling?.setAttribute('aria-expanded', 'false');
+        p.setAttribute('aria-hidden', 'true');
       }
     });
 
     panel.classList.add('open');
-    panel.style.maxHeight = panel.scrollHeight + 30 + "px"; // give some buffer
-    btn.setAttribute('aria-expanded','true');
-    panel.setAttribute('aria-hidden','false');
+    panel.style.maxHeight = panel.scrollHeight + 30 + 'px';
+    btn.setAttribute('aria-expanded', 'true');
+    panel.setAttribute('aria-hidden', 'false');
   }
   function closePanel() {
     panel.classList.remove('open');
     panel.style.maxHeight = null;
-    btn.setAttribute('aria-expanded','false');
-    panel.setAttribute('aria-hidden','true');
+    btn.setAttribute('aria-expanded', 'false');
+    panel.setAttribute('aria-hidden', 'true');
   }
 
-  btn.addEventListener('click', ()=> {
+  btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
-    if(expanded) closePanel(); else openPanel();
+    if (expanded) closePanel(); else openPanel();
   });
+});
 
-  // keyboard: support Enter & Space (buttons already handle that),
-  // ensure focus styles are visible (browser default is okay)
+// Filterable project grid: category chips show/hide matching cards
+const filterChips = document.querySelectorAll('.filter-chip');
+const projectCards = document.querySelectorAll('.project-card');
+
+function applyFilter(filter) {
+  projectCards.forEach(card => {
+    const match = filter === 'all' || card.dataset.category === filter;
+    card.hidden = !match;
+  });
+}
+
+filterChips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    filterChips.forEach(c => {
+      const active = c === chip;
+      c.classList.toggle('is-active', active);
+      c.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    applyFilter(chip.dataset.filter);
+  });
 });

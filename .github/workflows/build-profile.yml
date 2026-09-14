@@ -66,11 +66,11 @@ jobs:
 
           cp dist/Kevin_Monsen_Resume.docx  resume/Kevin_Monsen_Resume.docx
           cp dist/Kevin_Monsen_Resume.pdf   resume/Kevin_Monsen_Resume.pdf
-          cp dist/accordion.html            accordion.html
+          cp dist/projects-grid.html        projects-grid.html
           cp dist/generated-pages.json      generated-pages.json
           cp dist/sitemap.xml               sitemap.xml
 
-          # Injected index.html (accordion already spliced in)
+          # Injected index.html (project grid already spliced in)
           cp dist/index.html                index.html
 
           # Project pages go to repo root alongside index.html
@@ -86,7 +86,7 @@ jobs:
           git add \
             resume/Kevin_Monsen_Resume.docx \
             resume/Kevin_Monsen_Resume.pdf \
-            accordion.html \
+            projects-grid.html \
             generated-pages.json \
             sitemap.xml \
             index.html \
