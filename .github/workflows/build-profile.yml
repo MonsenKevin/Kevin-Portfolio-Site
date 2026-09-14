@@ -68,6 +68,7 @@ jobs:
           cp dist/Kevin_Monsen_Resume.pdf   resume/Kevin_Monsen_Resume.pdf
           cp dist/accordion.html            accordion.html
           cp dist/generated-pages.json      generated-pages.json
+          cp dist/sitemap.xml               sitemap.xml
 
           # Injected index.html (accordion already spliced in)
           cp dist/index.html                index.html
@@ -87,6 +88,7 @@ jobs:
             resume/Kevin_Monsen_Resume.pdf \
             accordion.html \
             generated-pages.json \
+            sitemap.xml \
             index.html \
             $(jq -r '.pages[]' generated-pages.json | tr '\n' ' ')
 

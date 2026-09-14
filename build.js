@@ -390,17 +390,72 @@ function buildProjectPage(proj) {
                     </div>`
     : `                    <!-- no CTA for this project -->`;
 
+  // ── SEO metadata ────────────────────────────────────────────────────────
+  // Build a concise, plain-text meta description from problem + outcome.
+  const descParts = [];
+  if (w.problem && w.problem !== "TODO") descParts.push(stripTags(w.problem));
+  if (w.outcome && w.outcome !== "TODO") descParts.push(stripTags(w.outcome));
+  let metaDesc = descParts.join(" ").replace(/\s+/g, " ").trim();
+  if (!metaDesc) metaDesc = `${proj.title} — a project by Kevin Monsen.`;
+  if (metaDesc.length > 300) metaDesc = metaDesc.slice(0, 297).trimEnd() + "…";
+  const metaDescAttr = escAttr(metaDesc);
+
+  const pageUrl  = `https://kevinmonsen.com/${proj.id}.html`;
+  const ogImage  = hasImage
+    ? `https://kevinmonsen.com/${w.image_path.replace(/^\.\//, "")}`
+    : "https://kevinmonsen.com/images/kevin.JPG";
+  const keywords = escAttr((w.relevance || "").split(",").map(t => t.trim()).filter(Boolean).join(", "));
+
+  // JSON-LD: CreativeWork nested in a breadcrumb-friendly Person authorship
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": proj.title,
+    "headline": proj.title,
+    "url": pageUrl,
+    "description": metaDesc,
+    "author": { "@type": "Person", "name": "Kevin Monsen", "url": "https://kevinmonsen.com/" },
+    ...(hasImage ? { "image": ogImage } : {}),
+    ...(proj.date ? { "dateCreated": proj.date } : {}),
+    ...(keywords ? { "keywords": keywords } : {})
+  };
+  const jsonLdBlock = JSON.stringify(jsonLd, null, 4)
+    .split("\n").map(l => "    " + l).join("\n");
+
   return `<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Monsen Portfolio - ${escHtml(proj.title)}</title>
-    <link rel="canonical" href="https://kevinmonsen.com/${proj.id}.html">
+    <title>${escAttr(proj.title)} | Kevin Monsen Portfolio</title>
+    <meta name="description" content="${metaDescAttr}">
+    <meta name="author" content="Kevin Monsen">${keywords ? `\n    <meta name="keywords" content="${keywords}">` : ""}
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="${pageUrl}">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Kevin Monsen Portfolio">
+    <meta property="og:url" content="${pageUrl}">
+    <meta property="og:title" content="${escAttr(proj.title)} | Kevin Monsen Portfolio">
+    <meta property="og:description" content="${metaDescAttr}">
+    <meta property="og:image" content="${escAttr(ogImage)}">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escAttr(proj.title)} | Kevin Monsen Portfolio">
+    <meta name="twitter:description" content="${metaDescAttr}">
+    <meta name="twitter:image" content="${escAttr(ogImage)}">
+
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="./main.js"></script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+${jsonLdBlock}
+    </script>
 </head>
 
 <body>
@@ -493,6 +548,18 @@ function escHtml(str) {
     .replace(/\r?\n/g, "<br>");
 }
 
+/** Escape for use inside an HTML attribute value (no <br> conversion) */
+function escAttr(str) {
+  return (str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/\r?\n/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /** Allow only <strong> tags through; escape everything else */
 function sanitizeHtml(str) {
   if (!str || str === "TODO") return "TODO";
@@ -541,6 +608,62 @@ function writeManifest(pages) {
     JSON.stringify({ pages }, null, 2)
   );
 }
+
+// ─── Sitemap Builder ───────────────────────────────────────────────────────────
+/**
+ * Generates sitemap.xml from the same project list used for page generation,
+ * so adding a project to profile.json automatically adds it to the sitemap.
+ *
+ * Static entries (home, resume) are always included. Project pages inherit a
+ * priority based on whether they appear on the resume (resume_rank set).
+ *
+ * Base URL is derived from profile.personal.website; lastmod is the build date.
+ */
+const SITE_BASE = (() => {
+  const raw = (profile.personal && profile.personal.website) || "kevinmonsen.com";
+  const host = raw.replace(/^https?:\/\//, "").replace(/\/+$/, "");
+  return `https://${host}`;
+})();
+
+function buildSitemap() {
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+  const entries = [
+    { loc: `${SITE_BASE}/`,            priority: "1.00", changefreq: "monthly" },
+    { loc: `${SITE_BASE}/resume.html`, priority: "0.90", changefreq: "monthly" },
+  ];
+
+  for (const proj of profile.projects) {
+    if (!hasWebsite(proj)) continue;
+    // Resume-ranked projects are the flagship work → higher priority.
+    const onResume = proj.resume_rank !== null && proj.resume_rank !== undefined;
+    entries.push({
+      loc: `${SITE_BASE}/${proj.id}.html`,
+      priority: onResume ? "0.80" : "0.60",
+      changefreq: "monthly",
+    });
+  }
+
+  const urlXml = entries.map(e =>
+    `  <url>\n` +
+    `    <loc>${e.loc}</loc>\n` +
+    `    <lastmod>${today}</lastmod>\n` +
+    `    <changefreq>${e.changefreq}</changefreq>\n` +
+    `    <priority>${e.priority}</priority>\n` +
+    `  </url>`
+  ).join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    `${urlXml}\n` +
+    `</urlset>\n`;
+}
+
+function writeSitemap() {
+  const xml = buildSitemap();
+  fs.writeFileSync(path.join(DIST, "sitemap.xml"), xml);
+  return (xml.match(/<url>/g) || []).length;
+}
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -586,7 +709,12 @@ async function main() {
   writeManifest(generatedPages);
   console.log(`  ✓ generated-pages.json (${generatedPages.length} pages tracked)`);
 
-  // 5. Summary
+  // 5. Sitemap
+  console.log("  Building sitemap …");
+  const sitemapCount = writeSitemap();
+  console.log(`  ✓ dist/sitemap.xml (${sitemapCount} URLs)`);
+
+  // 6. Summary
   const topN = profile._meta.resume_top_n;
   const resumeCount = profile.projects.filter(p => p.resume_rank !== null && p.resume_rank <= topN).length;
   const todoCount = JSON.stringify(profile).split('"TODO"').length - 1;
