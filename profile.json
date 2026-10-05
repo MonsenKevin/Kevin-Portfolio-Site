@@ -445,6 +445,7 @@
 
       "website": {
         "essay": "Having to sign into the desktop computer at school every time I needed to TA for class was frustrating. Originally, I wanted to buy a Hak5 USB Rubber Ducky, a human interface device (HID) disguised as a USB stick. The idea was that it could be a useful pentest tool because you could plug it in and it would run whatever code you wanted.\n\nHowever, at $100, I knew I could build something similar for far less. I took a Raspberry Pi Pico and used CircuitPython to upload my own Python script. I simply plug in the Pi to any computer, press the button, and it types my username, password, and Enter key, logging me in within seconds.\n\nThe security implications of this device are significant. Given how inexpensive Raspberry Pi devices are and how much access HID devices can gain—they often bypass EDR scanners—a single device plugged in by a user can run commands and download malware. The best way to protect organizations is to educate employees about device safety and enforce strict controls. Through awareness and blocking, security teams can mitigate this attack vector. It is something I hope to focus on in my career.",
+        "relevance": "Cybersecurity, Microcontrollers, HID",
         "image_path": "./images/rubberducky.jpeg",
         "image_caption": "Raspberry Pi Pico used",
         "cta": { "label": "View Code", "url": "https://github.com/MonsenKevin/afloat" }
