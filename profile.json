@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Master profile source of truth for Kevin Monsen. Edit here; all platforms derive from this file.",
-    "resume_top_n": 5,
+    "resume_top_n": 4,
     "notes": [
       "resume_top_n: controls how many projects appear on the resume. Default 5. Reduce as work experience grows.",
       "Bold tool names in resume bullets use <strong> tags — resume templates and the website renderer both read these.",
