@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Rubber Ducky Exploration | Kevin Monsen Portfolio</title>
+    <meta name="description" content="Security Rubber Ducky Exploration — a project by Kevin Monsen.">
+    <meta name="author" content="Kevin Monsen">
+    <meta name="keywords" content="Cybersecurity, Microcontrollers, HID">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://kevinmonsen.com/diy-rubberduck.html">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Kevin Monsen Portfolio">
+    <meta property="og:url" content="https://kevinmonsen.com/diy-rubberduck.html">
+    <meta property="og:title" content="Security Rubber Ducky Exploration | Kevin Monsen Portfolio">
+    <meta property="og:description" content="Security Rubber Ducky Exploration — a project by Kevin Monsen.">
+    <meta property="og:image" content="https://kevinmonsen.com/images/rubberducky.jpeg">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Security Rubber Ducky Exploration | Kevin Monsen Portfolio">
+    <meta name="twitter:description" content="Security Rubber Ducky Exploration — a project by Kevin Monsen.">
+    <meta name="twitter:image" content="https://kevinmonsen.com/images/rubberducky.jpeg">
+
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Security Rubber Ducky Exploration",
+        "headline": "Security Rubber Ducky Exploration",
+        "url": "https://kevinmonsen.com/diy-rubberduck.html",
+        "description": "Security Rubber Ducky Exploration — a project by Kevin Monsen.",
+        "author": {
+            "@type": "Person",
+            "name": "Kevin Monsen",
+            "url": "https://kevinmonsen.com/"
+        },
+        "image": "https://kevinmonsen.com/images/rubberducky.jpeg",
+        "dateCreated": "2026",
+        "keywords": "Cybersecurity, Microcontrollers, HID"
+    }
+    </script>
+</head>
+
+<body>
+    <div class="showcase">
+        <section class="problem-solver">
+            <div class="grid">
+                <div class="column">
+                    <a href="./" class="back-btn">← Return Home</a>
+                <figure class="leadership-media" aria-hidden="true">
+                    <img src="./images/rubberducky.jpeg" alt="" />
+                    <figcaption class="sr-only">Raspberry Pi Pico used</figcaption>
+                </figure>
+                </div>
+
+                <!-- Right: content -->
+                <div class="content">
+                    <h2 id="diy-rubberduck">Security Rubber Ducky Exploration</h2>
+                    <div class="metrics">
+                        <span class="chip">Cybersecurity</span>
+                        <span class="chip">Microcontrollers</span>
+                        <span class="chip">HID</span>
+                    </div>
+                    <p class="intro">
+                        Having to sign into the desktop computer at school every time I needed to TA for class was frustrating. Originally, I wanted to buy a Hak5 USB Rubber Ducky, a human interface device (HID) disguised as a USB stick. The idea was that it could be a useful pentest tool because you could plug it in and it would run whatever code you wanted.<br><br>However, at $100, I knew I could build something similar for far less. I took a Raspberry Pi Pico and used CircuitPython to upload my own Python script. I simply plug in the Pi to any computer, press the button, and it types my username, password, and Enter key, logging me in within seconds.<br><br>The security implications of this device are significant. Given how inexpensive Raspberry Pi devices are and how much access HID devices can gain—they often bypass EDR scanners—a single device plugged in by a user can run commands and download malware. The best way to protect organizations is to educate employees about device safety and enforce strict controls. Through awareness and blocking, security teams can mitigate this attack vector. It is something I hope to focus on in my career.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/MonsenKevin/afloat">View Code</a>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>
